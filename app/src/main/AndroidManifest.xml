@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.acsea.funstop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".torAbout"></activity>
+        <activity android:name=".torPrivacyPolicy"></activity>
+        <activity android:name=".torTermOfUse" />
+        <activity android:name=".torontoRule" >
+
+        </activity>
+        <activity android:name=".vanFunStopMap" />
+        <activity android:name=".TorFunStop"> </activity>
+        <activity android:name=".VanFunStop"></activity>
+        <activity android:name=".torCamera" />
+        <activity android:name=".vanCamera" />
+        <activity android:name=".vanNavMenu"> </activity>
+        <activity android:name=".torontoNavMenue"> </activity>
+        <activity android:name=".torontoFunStopMap" />
+        <activity android:name=".torontoSponsor">
+        </activity>
+        <activity android:name=".torontoSchedule" />
+        <activity android:name=".torontoVenueMap" />
+        <activity android:name=".termofuse" ></activity>
+        <activity
+            android:name=".sponsor"
+            android:label="@string/title_activity_sponsor"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".schedule"> </activity>
+        <activity android:name=".privacypolicy">
+
+        </activity>
+        <activity android:name=".lunarfestad" />
+        <activity android:name=".aboutacsea" >
+
+        </activity>
+        <activity android:name=".map" />
+        <activity android:name=".rule" />
+        <activity android:name=".menu">
+
+        </activity>
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustNothing">  <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

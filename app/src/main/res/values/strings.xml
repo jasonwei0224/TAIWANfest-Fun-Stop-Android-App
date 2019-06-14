@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">funstop</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_privacy_policy">PRIVACY POLICY</string>
+    <string name="privacy_policy_declartion"> Asian-Canadian Special Events Association (ACSEA)
+        is committed to protecting the privacy and security of personal information held about its patrons.
+        Our purpose is to assure anyone who does business with us that ACSEA complies with the Privacy Act,
+        the Personal Information Protection and Electronic Documents Act, and Canada’s Anti-Spam Legislation.
+    </string>
+    <string name="privacy_policy_declaration_p2">
+        The following is a statement of our commitment to ensure that the collection, use,
+        disclosure and security of your personal information complies with the provisions of the Privacy Act,
+        the Personal Information Protection and Electronic Documents Act, and Canada’s Anti-Spam Legislation,
+        in terms of legal conformity and ethical practice.</string>
+    <string name="privacy_policy_collection_of_info">COLLECTION OF INFORMATION</string>
+    <string name="privacy_policy_collection_info_description">ACSEA only collects personal information
+        from:  Attendees (directly or through the venue box offices and partnering ticket agencies)
+        Donors Members Volunteers Others who have shown an interest in ACSEA This information is
+        collected by a variety of methods: phone, fax, mail, email, online, or in person.</string>
+    <string name="privacy_policy_use_of_info">USE OF INFORMATION</string>
+    <string name="privacy_policy_use_of_info_description">
+        ACSEA uses personal information to better serve our patrons and to expand our community of support.
+        This primarily includes using the information:
+        To deliver services to provide information about tickets, events, membership and donations
+        To thank supporters, fulfill subscriber and donor benefits
+        To invite supporters to special events
+        To sell tickets and solicit donations
+        For service phone calls and e-mails
+        ACSEA is committed to using personal information in a respectful and useful way.
+        ACSEA is also committed to making sure patrons do not receive more than a reasonable number
+        of emails, letters or phone calls.</string>
+    <string name="privacy_policy_disclosure">DISCLOSURE OF INFORMATION</string>
+    <string name="privacy_policy_disclosure_description">ACSEA treats its obligations with respect to
+        the use and disclosure of personal information very seriously. Generally, we will only use or
+        disclose personal information for the primary purpose that it was collected or for a purpose
+        related to the primary purpose that you would reasonably expect it to be used.
+        The ACSEA will not sell, rent or share your personal information.</string>
+    <string name="privacy_policy_storage">STORAGE OF INFORMATION</string>
+    <string name="privacy_policy_storage_description">Personal information is stored in our database(s)
+        on a secure server and in hard copy files. Only authorized ACSEA personnel have access to this information.
+        ACSEA uses personal information to better serve our patrons and to expand our community of support.</string>
+    <string name="privcay_policy_accountability">ACCOUNTABILITY</string>
+    <string name="privacy_policy_accountability_descritption">ACSEA does its best to ensure that all
+        information is recorded accurately—if you notice any errors in our correspondence with you
+        or if your personal information changes, please contact us at info@acsea.ca to update your file.
+        If you do not wish to be contacted by phone, mail or email, please contact us and we
+        will ensure that your request is honoured. If you have any questions about ACSEA’s privacy
+        policy or concerns about the way that your information is being used, please contact us at
+        info@acsea.ca.</string>
+    <string name="city_prompt">Choose a city </string>
+    <string-array name="city_array">
+        <item>Toronto</item>
+        <item>Vancouver</item>
+    </string-array>
+    <string name="title_activity_sponsor">sponsor</string>
+    <string name="Privacy_Policy"> <u> PRIVACY POLICY</u> </string>
+    <string name="Term_Of_Use"> <u> TERM OF USE </u> </string>
+</resources>
