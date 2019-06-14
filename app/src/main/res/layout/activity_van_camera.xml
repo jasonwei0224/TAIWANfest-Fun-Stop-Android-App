@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".vanCamera">
 
+    <TextView
+        android:id="@+id/txtdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VanCameraView"
+        app:layout_constraintVertical_bias="1.0" />
+
     <SurfaceView
         android:id="@+id/VanCameraView"
         android:layout_width="377dp"
@@ -14,4 +26,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
