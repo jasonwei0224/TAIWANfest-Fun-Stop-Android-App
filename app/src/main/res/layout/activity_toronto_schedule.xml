@@ -7,6 +7,1212 @@
     android:background="@drawable/backgroundnowave"
     tools:context=".torontoSchedule">
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="328dp"
+        android:layout_height="490dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="19dp"
+        android:scrollbarDefaultDelayBeforeFade="0"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="5dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@color/colorAccent"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="12:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="-5dp">
+
+                            <ImageButton
+                                android:id="@+id/imageButton19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="-5dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="1:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView381"
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="2:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vag_location_icon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text='"Riding the Waves With Vietnam"'
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Concert by Maestro Ken Hsieh"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/dayTwoBtn"
+        android:layout_width="61dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/dayThreeBtn"
+        app:layout_constraintStart_toEndOf="@+id/dayOneBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/august31btn" />
+
+    <ImageButton
+        android:id="@+id/dayOneBtn"
+        android:layout_width="61dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="27dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sept1btn" />
+
+    <ImageButton
+        android:id="@+id/dayThreeBtn"
+        android:layout_width="61dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="27dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sept2btn" />
+
     <ImageButton
         android:id="@+id/imageButton42"
         android:layout_width="wrap_content"

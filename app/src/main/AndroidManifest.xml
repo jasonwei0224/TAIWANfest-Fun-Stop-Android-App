@@ -17,20 +17,20 @@
 
         </activity>
         <activity android:name=".vanFunStopMap" />
-        <activity android:name=".TorFunStop"> </activity>
+        <activity android:name=".TorFunStop"></activity>
         <activity android:name=".VanFunStop"></activity>
         <activity android:name=".torCamera" />
         <activity android:name=".vanCamera" />
-        <activity android:name=".vanNavMenu"> <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter> </activity>
+        <activity android:name=".vanNavMenu">  </activity>
         <activity android:name=".torontoNavMenue"> </activity>
         <activity android:name=".torontoFunStopMap" />
         <activity android:name=".torontoSponsor">
         </activity>
-        <activity android:name=".torontoSchedule" />
+        <activity android:name=".torontoSchedule">  <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity android:name=".torontoVenueMap" />
         <activity android:name=".termofuse" ></activity>
         <activity
