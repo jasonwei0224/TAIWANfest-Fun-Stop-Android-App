@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notification_body">
+        app:layout_constraintTop_toBottomOf="@+id/vanNotificationBody">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,18 +26,19 @@
             android:orientation="vertical">
 
             <TableLayout
+                android:id="@+id/vanProgramOne"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TableRow
-                    android:id="@+id/firstRow1"
+                    android:id="@+id/vanFirstRow"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/numberTwoIcon"
+                        android:id="@+id/vanNumberOneIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
                         android:layout_marginTop="16dp"
@@ -48,13 +49,364 @@
                         tools:layout_editor_absoluteY="33dp" />
 
                     <ImageView
-                        android:id="@+id/TorProgramImgONe"
+                        android:id="@+id/vanProgramOneImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
                         app:srcCompat="@drawable/imageplaceholder" />
 
                     <TextView
-                        android:id="@+id/TorProgramOneTxt"
+                        android:id="@+id/vanProgramOneTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanSecondRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberTwoIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramTwoImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/VanProgramTwoTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanThirdRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberThreeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramThreeImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramThreeTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanFourthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberFourIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramFourImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramFourTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/fifthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberFiveIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramFiveImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramFiveTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanSixthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberSixIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramSixImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramSixTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/SeventhRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberSevenIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramSevenImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramSevenTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramEight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanEightRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberEightIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramEightImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramEightTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramNine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanNinethRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vnaNumberNineIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramNineImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramNineTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Program 1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramTen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanTenthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberTenIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/numberone"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramTenImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/imageplaceholder" />
+
+                    <TextView
+                        android:id="@+id/vanProgramTenTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Program 1" />
@@ -75,7 +427,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="8dp"
-        android:onClick=""
+        android:onClick="reset"
         android:text="DONE"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,7 +435,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/notification_title"
+        android:id="@+id/vanNotificationTitle"
         android:layout_width="372dp"
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
@@ -100,7 +452,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/notification_body"
+        android:id="@+id/vanNotificationBody"
         android:layout_width="399dp"
         android:layout_height="45dp"
         android:layout_marginTop="14dp"
@@ -109,7 +461,7 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notification_title" />
+        app:layout_constraintTop_toBottomOf="@+id/vanNotificationTitle" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -127,7 +479,7 @@
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton11"
-        app:layout_constraintTop_toBottomOf="@+id/notification_body"
+        app:layout_constraintTop_toBottomOf="@+id/vanNotificationBody"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/camerabtn" />
 
@@ -147,7 +499,7 @@
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notification_body"
+        app:layout_constraintTop_toBottomOf="@+id/vanNotificationBody"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/mapbtn" />
 
@@ -163,7 +515,7 @@
         android:layout_marginBottom="19dp"
         android:background="@android:color/transparent"
         android:onClick="startVanNavMenuActivity"
-        app:layout_constraintBottom_toTopOf="@+id/notification_title"
+        app:layout_constraintBottom_toTopOf="@+id/vanNotificationTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
