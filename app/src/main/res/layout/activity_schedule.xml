@@ -1166,7 +1166,7 @@
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/vanDayOneBtn"
         android:layout_width="61dp"
         android:layout_height="39dp"
         android:layout_marginStart="50dp"
@@ -1182,7 +1182,7 @@
         app:srcCompat="@drawable/august31btn" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/VanDayTwoBtn"
         android:layout_width="61dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
@@ -1192,14 +1192,14 @@
         android:layout_marginRight="8dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton17"
+        app:layout_constraintEnd_toStartOf="@+id/VanDayThreeBtn"
         app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/vanDayOneBtn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sept1btn" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/VanDayThreeBtn"
         android:layout_width="61dp"
         android:layout_height="39dp"
         android:layout_marginTop="84dp"
@@ -1226,7 +1226,7 @@
         android:layout_marginBottom="25dp"
         android:background="@android:color/transparent"
         android:onClick="startVanNavMenu"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
+        app:layout_constraintBottom_toTopOf="@+id/vanDayOneBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
