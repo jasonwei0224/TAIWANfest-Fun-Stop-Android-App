@@ -26,11 +26,7 @@
         <activity android:name=".torontoFunStopMap" />
         <activity android:name=".torontoSponsor">
         </activity>
-        <activity android:name=".torontoSchedule">  <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".torontoSchedule"></activity>
         <activity android:name=".torontoVenueMap" />
         <activity android:name=".termofuse" ></activity>
         <activity
@@ -55,7 +51,11 @@
         <activity
             android:name=".login"
             android:label="@string/title_activity_login"
-            android:windowSoftInputMode="adjustNothing">  </activity>
+            android:windowSoftInputMode="adjustNothing">  <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>  </activity>
         <activity android:name=".MainActivity" />
     </application>
 

@@ -262,4 +262,8 @@ public class VanFunStop extends AppCompatActivity {
         vanStationNineComplete = false;
         vanStationTenComplete = false;
     }
+    public void showRule(View view){
+        Intent intent = new Intent(this, rule.class);
+        startActivity(intent);
+    }
 }

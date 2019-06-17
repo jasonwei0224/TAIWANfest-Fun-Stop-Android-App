@@ -8,113 +8,6 @@
     android:windowSoftInputMode="adjustNothing"
     tools:context=".login">
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="332dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/textinputbg"
-        android:ems="10"
-
-        android:gravity="center"
-        android:hint="EMAIL"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/colorGrey"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="333dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/textinputbg"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="PASSWORD"
-        android:inputType="textPassword"
-        android:textColor="@color/colorGrey"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/agreeToReceiveEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
-
-    <CheckBox
-        android:id="@+id/agreeToReceiveEmail"
-        android:layout_width="260dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="8dp"
-        android:button="@drawable/checkbox"
-        android:theme="@style/AppTheme"
-        android:paddingLeft="15dp"
-        android:text="By checking you agree to receive emails from ACSEA"
-        android:textColor="@color/darkOrange"
-        app:layout_constraintBottom_toTopOf="@+id/agreeToProgramNotification"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
-
-    <CheckBox
-        android:id="@+id/agreeToProgramNotification"
-        android:layout_width="260dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="8dp"
-        android:button="@drawable/checkbox"
-        android:paddingLeft="15dp"
-        android:text="Subscribe to program notifications"
-        android:textColor="@color/darkOrange"
-        app:layout_constraintBottom_toTopOf="@+id/agreeToJoinPoolOfPrize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agreeToReceiveEmail" />
-
-    <CheckBox
-        android:id="@+id/agreeToJoinPoolOfPrize"
-        android:layout_width="260dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="8dp"
-        android:button="@drawable/checkbox"
-        android:paddingLeft="15dp"
-        android:paddingRight="20dp"
-        android:text="Add me in the pool for the draw of the big prize!"
-        android:textColor="@color/darkOrange"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agreeToProgramNotification" />
-
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
@@ -130,10 +23,9 @@
         app:layout_constraintGuide_begin="335dp" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/cityChoices"
         android:layout_width="334dp"
         android:layout_height="43dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:animationCache="true"
         android:background="@drawable/dropdownbackground"
@@ -146,11 +38,10 @@
         android:scrollbars="vertical"
         android:textAlignment="center"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/signInBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agreeToJoinPoolOfPrize" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
@@ -167,37 +58,34 @@
         app:layout_constraintGuide_begin="372dp" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:id="@+id/signInBtn"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         android:src="@drawable/submitbutton"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="51dp"
+        android:layout_width="273dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="74dp"
         android:text="By signing up you accept and agree to ACSEA's Privacy Policy and Term of Use"
         android:textColor="@color/darkBlue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="105dp" />
+        app:layout_constraintGuide_begin="89dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline6"
@@ -205,5 +93,82 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="307dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="307dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/textinputbg"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorGrey"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="302dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/textinputbg"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorGrey"
+        app:layout_constraintBottom_toTopOf="@+id/agreeToReceiveEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/agreeToReceiveEmail"
+        android:layout_width="229dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:button="@drawable/checkbox"
+        android:text="agreeToReceiveEmail"
+        android:textColor="@color/browser_actions_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/agreeToJoinPoolOfPrize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/agreeToJoinPoolOfPrize"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginLeft="159dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginRight="157dp"
+        android:layout_marginBottom="16dp"
+        android:button="@drawable/checkbox"
+        android:text="agreeToJoinPoolOfPrize"
+        android:textColor="@color/browser_actions_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/agreeToProgramNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/agreeToProgramNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:button="@drawable/checkbox"
+        android:text="agreeToProgramNotification"
+        android:textColor="@color/browser_actions_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/cityChoices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

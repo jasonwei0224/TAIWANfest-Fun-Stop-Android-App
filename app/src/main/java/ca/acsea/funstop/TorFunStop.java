@@ -266,5 +266,10 @@ public class TorFunStop extends AppCompatActivity {
         }
     };
 
+    public void showRules(View view){
+        Intent intent = new Intent(this, torontoRule.class);
+        startActivity(intent);
+    }
+
 
 }
