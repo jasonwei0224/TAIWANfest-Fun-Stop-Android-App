@@ -34,7 +34,7 @@ public class menu extends AppCompatActivity {
         agreedToReceiveEmailIsChecked = bundle.getBoolean("agreedToReceiveEmailIsChecked");
         agreedToProgramNotification = bundle.getBoolean("agreedToProgramNotification");
         agreedToJoinBigPrizeIsChecked = bundle.getBoolean("agreedToJoinBigPrizeIsChecked");
-        city = bundle.getString("choiceOfCity");
+        city = bundle.getString("city");
         mAuth = FirebaseAuth.getInstance();
 
         FirebaseInstanceId.getInstance().getInstanceId()

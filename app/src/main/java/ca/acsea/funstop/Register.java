@@ -24,7 +24,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
-public class login extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     public static final String CHANNEL_ID = "ACSEA";
     public static final String CHANNEL_NAME = " ACSEA";
     public static final String CHANNEL_DESC = "ACSEA";
@@ -42,18 +42,20 @@ public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
         SharedPreferences prefs = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
         setUp(prefs);
 
 
         agreeToReceiveEmail = findViewById(R.id.agreeToReceiveEmail);
         agreeToJoinPoolOfPrize = findViewById(R.id.agreeToJoinPoolOfPrize);
-        agreeToProgramNotification = findViewById(R.id.agreeToReceiveProgramNotification);
-        /*agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();*/
+        agreeToProgramNotification = findViewById(R.id.agreeToJoinPoolOfPrize);
+        agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();
         editTextEmail = findViewById(R.id.email);
         passwordText = findViewById(R.id.password);
-
+        /*if(agreedToReceiveEmailIsChecked){
+            Toast.makeText(this, "checked", Toast.LENGTH_LONG).show();
+        }*/
         mAuth = FirebaseAuth.getInstance();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
@@ -70,11 +72,11 @@ public class login extends AppCompatActivity {
             manager.createNotificationChannel(channel);
         }
 
-       agreeToReceiveEmail.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        agreeToReceiveEmail.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
-                    agreedToReceiveEmailIsChecked = true;
+                    agreedToReceiveEmailIsChecked = isChecked;
                     //Change the picture
                     //Toast.makeText(login.this, "checked", Toast.LENGTH_LONG).show();
                 }
@@ -84,7 +86,7 @@ public class login extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
-                    agreedToProgramNotification = true;
+                    agreedToProgramNotification = isChecked;
                     //Change the picture
                     //Toast.makeText(login.this, "checked", Toast.LENGTH_LONG).show();
                 }
@@ -94,7 +96,7 @@ public class login extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
-                    agreedToJoinBigPrizeIsChecked = true;
+                    agreedToJoinBigPrizeIsChecked = isChecked;
                     //Change the picture
                     //Toast.makeText(login.this, "checked", Toast.LENGTH_LONG).show();
                 }
@@ -108,21 +110,21 @@ public class login extends AppCompatActivity {
         });
     }
     private void setUp(SharedPreferences preferences){
-        if(preferences.contains("agreedToReceiveEmailIsChecked")){
-            agreedToReceiveEmailIsChecked = preferences.getBoolean("agreedToReceiveEmailIsChecked", false);
+        if(preferences.contains("agreedToReceiveEmail")){
+            agreedToReceiveEmailIsChecked = preferences.getBoolean("agreedToReceiveEmail", false);
         }
         if(preferences.contains("agreedToProgramNotification")){
             agreedToProgramNotification = preferences.getBoolean("agreedToProgramNotification", false);
         }
-        if(preferences.contains("agreedToJoinBigPrizeIsChecked")){
+        if(preferences.contains("agreeToJoinPoolOfPrize")){
             agreedToJoinBigPrizeIsChecked = preferences.getBoolean("agreedToJoinBigPrizeIsChecked", false);
         }
-        if(preferences.contains("city")){
-            city = preferences.getString("city", null);
+        if(preferences.contains("choiceOfCity")){
+            city = preferences.getString("choiceOfCity", null);
         }
     }
     private void createUser(){
-       agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();
+        agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();
         agreedToJoinBigPrizeIsChecked = agreeToJoinPoolOfPrize.isChecked();
         agreedToProgramNotification = agreeToProgramNotification.isChecked();
         cityChoice = findViewById(R.id.cityChoices);
@@ -132,25 +134,25 @@ public class login extends AppCompatActivity {
         if(!agreedToReceiveEmailIsChecked){
             agreeToReceiveEmail.setError("Must be agree to use our app");
             agreeToReceiveEmail.requestFocus();
-            Toast.makeText(login.this, "must agree to use",Toast.LENGTH_LONG).show();
+            Toast.makeText(Register.this, "must agree to use",Toast.LENGTH_LONG).show();
             return;
         }
         if (email.isEmpty()) {
             editTextEmail.setError("Email required");
             editTextEmail.requestFocus();
-            Toast.makeText(login.this, "Email Required",Toast.LENGTH_LONG).show();
+            Toast.makeText(Register.this, "Email Required",Toast.LENGTH_LONG).show();
             return;
         }
         if(password.isEmpty()){
             passwordText.setError("Password Required");
             passwordText.requestFocus();
-            Toast.makeText(login.this, "password required" ,Toast.LENGTH_LONG).show();
+            Toast.makeText(Register.this, "password required" ,Toast.LENGTH_LONG).show();
             return;
         }
-       if(password.length() < 6){
+        if(password.length() < 6){
             passwordText.setError("Password must be longer than 6");
             passwordText.requestFocus();
-            Toast.makeText(login.this, "password must be longer than 6",Toast.LENGTH_LONG);
+            Toast.makeText(Register.this, "password must be longer than 6",Toast.LENGTH_LONG);
             return;
         }
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(
@@ -174,7 +176,7 @@ public class login extends AppCompatActivity {
 
                             }else{
                                 if(task.getException() !=null) {
-                                    Toast.makeText(login.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                    Toast.makeText(Register.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                                 }
                             }
                         }
@@ -216,7 +218,7 @@ public class login extends AppCompatActivity {
                     startProfileActivity();
                 }else{
                     if(task.getException()!=null) {
-                        Toast.makeText(login.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(Register.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }
             }

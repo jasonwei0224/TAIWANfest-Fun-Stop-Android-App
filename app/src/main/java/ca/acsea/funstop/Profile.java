@@ -20,10 +20,10 @@ public class Profile extends AppCompatActivity {
     public static final String NODE_USERS = "users";
     private FirebaseAuth mAuth;
     //private FirebaseAnalytics mFirebaseAnalytics;
-    private boolean agreedToSubscribe;
-    private boolean agreedToJoinBigPrize;
-    private boolean agreedToRecieveEmail;
-    private String choiceOfCity;
+    private boolean agreedToProgramNotification;
+    private boolean agreedToJoinBigPrizeIsChecked;
+    private boolean agreedToReceiveEmailIsChecked;
+    private String city;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,19 +31,19 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-            agreedToJoinBigPrize = bundle.getBoolean("agreedToJoinBigPrize");
-            agreedToSubscribe = bundle.getBoolean("agreedToSubscribe");
-            agreedToRecieveEmail = bundle.getBoolean("agreedToRecieveEmail");
-            choiceOfCity = bundle.getString("choiceOfCity");
+            agreedToJoinBigPrizeIsChecked = bundle.getBoolean("agreedToJoinBigPrizeIsChecked");
+            agreedToProgramNotification = bundle.getBoolean("agreedToProgramNotification");
+            agreedToReceiveEmailIsChecked = bundle.getBoolean("agreedToReceiveEmailIsChecked");
+            city = bundle.getString("city");
         }
         // mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
 
         mAuth = FirebaseAuth.getInstance();
-        if (agreedToSubscribe && choiceOfCity.equalsIgnoreCase("Toronto")) {
+        if (agreedToProgramNotification && city.equalsIgnoreCase("Toronto")) {
             FirebaseMessaging.getInstance().subscribeToTopic("TAIWANfest");
             FirebaseMessaging.getInstance().subscribeToTopic("Toronto");
-        } else if (agreedToSubscribe && choiceOfCity.equalsIgnoreCase("Vancouver")) {
+        } else if (agreedToProgramNotification && city.equalsIgnoreCase("Vancouver")) {
             FirebaseMessaging.getInstance().subscribeToTopic("TAIWANfest");
             FirebaseMessaging.getInstance().subscribeToTopic("Vancouver");
         } else {
@@ -63,7 +63,7 @@ public class Profile extends AppCompatActivity {
 
     private void saveToken(String token) {
         String email = mAuth.getCurrentUser().getEmail();
-        User user = new User(email, token, agreedToRecieveEmail, agreedToSubscribe, agreedToJoinBigPrize, choiceOfCity);
+        User user = new User(email, token, agreedToReceiveEmailIsChecked, agreedToProgramNotification, agreedToJoinBigPrizeIsChecked, city);
 
         DatabaseReference dbUser = FirebaseDatabase.getInstance().getReference(NODE_USERS);
         dbUser.child(mAuth.getCurrentUser().getUid()).setValue(user).addOnCompleteListener(
@@ -85,10 +85,10 @@ public class Profile extends AppCompatActivity {
             Intent intent = new Intent(this, menu.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-            intent.putExtra("agreedToRecieveEmail", agreedToRecieveEmail);
-            intent.putExtra("agreedToSubscribe", agreedToSubscribe);
-            intent.putExtra("agreedToJoinBigPrize", agreedToJoinBigPrize);
-            intent.putExtra("choiceOfCity", choiceOfCity);
+            intent.putExtra("agreedToReceiveEmailIsChecked", agreedToReceiveEmailIsChecked);
+            intent.putExtra("agreedToProgramNotification", agreedToProgramNotification);
+            intent.putExtra("agreedToJoinBigPrizeIsChecked", agreedToJoinBigPrizeIsChecked);
+            intent.putExtra("city", city);
         }
     }
 }
