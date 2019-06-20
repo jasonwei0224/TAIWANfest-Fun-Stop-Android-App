@@ -12,34 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
-        <activity android:name=".torAbout" />
-        <activity android:name=".torPrivacyPolicy" />
-        <activity android:name=".torTermOfUse" />
-        <activity android:name=".torontoRule"></activity>
-        <activity android:name=".vanFunStopMap" />
-        <activity android:name=".TorFunStop" />
-        <activity android:name=".VanFunStop" />
-        <activity android:name=".torCamera" />
-        <activity android:name=".vanCamera" />
-        <activity android:name=".vanNavMenu"></activity>
-        <activity android:name=".torontoNavMenue"></activity>
-        <activity android:name=".torontoFunStopMap" />
-        <activity android:name=".torontoSponsor"></activity>
-        <activity android:name=".torontoSchedule" />
-        <activity android:name=".torontoVenueMap" />
-        <activity android:name=".termofuse" />
-        <activity
-            android:name=".sponsor"
-            android:label="@string/title_activity_sponsor"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".schedule"></activity>
-        <activity android:name=".privacypolicy"></activity>
-        <activity android:name=".lunarfestad" />
-        <activity android:name=".aboutacsea"></activity>
-        <activity android:name=".map" />
-        <activity android:name=".rule" />
-        <activity android:name=".menu"></activity>
         <activity
             android:name=".login"
             android:label="@string/title_activity_login"
@@ -50,7 +22,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".torAbout" />
+        <activity android:name=".torPrivacyPolicy" />
+        <activity android:name=".torTermOfUse" />
+        <activity android:name=".torontoRule" />
+        <activity android:name=".vanFunStopMap" />
+        <activity android:name=".TorFunStop" />
+        <activity android:name=".VanFunStop" />
+        <activity android:name=".torCamera" />
+        <activity android:name=".vanCamera" />
+        <activity android:name=".vanNavMenu" />
+        <activity android:name=".torontoNavMenue" />
+        <activity android:name=".torontoFunStopMap" />
+        <activity android:name=".torontoSponsor" />
+        <activity android:name=".torontoSchedule" />
+        <activity android:name=".torontoVenueMap" />
+        <activity android:name=".termofuse" />
+        <activity
+            android:name=".sponsor"
+            android:label="@string/title_activity_sponsor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".schedule" />
+        <activity android:name=".privacypolicy" />
+        <activity android:name=".lunarfestad" />
+        <activity android:name=".aboutacsea" />
+        <activity android:name=".map" />
+        <activity android:name=".rule" />
+        <activity android:name=".menu" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".Register"
+            android:windowSoftInputMode="adjustNothing"
+            />
     </application>
 
 </manifest>

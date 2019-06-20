@@ -5,184 +5,87 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundnowave"
-    android:windowSoftInputMode="adjustNothing"
     tools:context=".login">
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="75dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="335dp" />
-
-    <Spinner
-        android:id="@+id/cityChoices"
-        android:layout_width="334dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="8dp"
-        android:animationCache="true"
-        android:background="@drawable/dropdownbackground"
-        android:entries="@array/city_array"
-        android:gravity="center"
-        android:prompt="@string/city_prompt"
-        android:scrollbarStyle="insideOverlay"
-        android:scrollbarThumbHorizontal="@android:drawable/arrow_down_float"
-        android:scrollbarTrackHorizontal="@android:drawable/arrow_down_float"
-        android:scrollbars="vertical"
-        android:textAlignment="center"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/signInBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="39dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="372dp" />
-
-    <ImageButton
-        android:id="@+id/signInBtn"
-        android:layout_width="145dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        android:src="@drawable/submitbutton"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="273dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="60dp"
-        android:text="By signing up you accept and agree to ACSEA's Privacy Policy and Term of Use"
-        android:textColor="@color/darkBlue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="89dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="307dp" />
-
     <EditText
-        android:id="@+id/email"
-        android:layout_width="307dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp"
+        android:id="@+id/loginPageEmail"
+        android:layout_width="339dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/textinputbg"
         android:ems="10"
-        android:gravity="center_horizontal|center_vertical"
+        android:gravity="center"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="@color/colorGrey"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/loginPagePassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="304dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:id="@+id/loginPagePassword"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="74dp"
         android:background="@drawable/textinputbg"
         android:ems="10"
-        android:gravity="center_horizontal|center_vertical"
-        android:hint="Password"
+        android:gravity="center"
         android:inputType="textPassword"
-        android:textColor="@color/colorGrey"
-        app:layout_constraintBottom_toTopOf="@+id/agreeToReceiveEmail"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/loginPageEmail"
+        tools:text="Password" />
 
-    <CheckBox
-        android:id="@+id/agreeToReceiveEmail"
-        android:layout_width="259dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
+    <ImageButton
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:button="@drawable/checkbox"
-        android:paddingLeft="10dp"
-        android:text="By checking you agree to recive emails from ACSEA"
-        android:textColor="@color/browser_actions_text_color"
-        app:layout_constraintBottom_toTopOf="@+id/agreeToReceiveProgramNotification"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:srcCompat="@drawable/submitbutton" />
 
-    <CheckBox
-        android:id="@+id/agreeToReceiveProgramNotification"
-        android:layout_width="258dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:button="@drawable/checkbox"
-        android:paddingLeft="10dp"
-        android:text="Add me into the pool for Big Prize!"
-        android:textColor="@color/browser_actions_text_color"
-        app:layout_constraintBottom_toTopOf="@+id/agreeToJoinPoolOfPrize"
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:onClick="startTorTermOfUse"
+        android:text="@string/Term_Of_Use"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/textView43"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agreeToReceiveEmail"
-        app:layout_constraintVertical_bias="0.769" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <CheckBox
-        android:id="@+id/agreeToJoinPoolOfPrize"
-        android:layout_width="257dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="28dp"
-        android:button="@drawable/checkbox"
-        android:paddingLeft="10dp"
-        android:text="I agree to receive Program Notifications"
-        android:textColor="@color/browser_actions_text_color"
-        app:layout_constraintBottom_toTopOf="@+id/cityChoices"
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="startTorPirvacyPolicyActivity"
+        android:text="@string/Privacy_Policy"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agreeToReceiveProgramNotification" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:onClick="startRegisterActivity"
+        android:text="@string/Register"
+        android:textColor="@color/browser_actions_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

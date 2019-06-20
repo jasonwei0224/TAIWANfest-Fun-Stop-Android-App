@@ -23,6 +23,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Register extends AppCompatActivity {
     public static final String CHANNEL_ID = "ACSEA";
@@ -39,6 +40,7 @@ public class Register extends AppCompatActivity {
     private boolean agreedToProgramNotification;
     private boolean agreedToJoinBigPrizeIsChecked;
     private FirebaseAuth mAuth;
+    private boolean isNewUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,13 +51,11 @@ public class Register extends AppCompatActivity {
 
         agreeToReceiveEmail = findViewById(R.id.agreeToReceiveEmail);
         agreeToJoinPoolOfPrize = findViewById(R.id.agreeToJoinPoolOfPrize);
-        agreeToProgramNotification = findViewById(R.id.agreeToJoinPoolOfPrize);
-        agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();
+        agreeToProgramNotification = findViewById(R.id.agreeToReceiveProgramNotification);
+        /*agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();*/
         editTextEmail = findViewById(R.id.email);
-        passwordText = findViewById(R.id.password);
-        /*if(agreedToReceiveEmailIsChecked){
-            Toast.makeText(this, "checked", Toast.LENGTH_LONG).show();
-        }*/
+        passwordText = findViewById(R.id.loginPagePassword);
+
         mAuth = FirebaseAuth.getInstance();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
@@ -72,11 +72,11 @@ public class Register extends AppCompatActivity {
             manager.createNotificationChannel(channel);
         }
 
-        agreeToReceiveEmail.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+       agreeToReceiveEmail.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
-                    agreedToReceiveEmailIsChecked = isChecked;
+                    agreedToReceiveEmailIsChecked = true;
                     //Change the picture
                     //Toast.makeText(login.this, "checked", Toast.LENGTH_LONG).show();
                 }
@@ -86,7 +86,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
-                    agreedToProgramNotification = isChecked;
+                    agreedToProgramNotification = true;
                     //Change the picture
                     //Toast.makeText(login.this, "checked", Toast.LENGTH_LONG).show();
                 }
@@ -96,7 +96,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
-                    agreedToJoinBigPrizeIsChecked = isChecked;
+                    agreedToJoinBigPrizeIsChecked = true;
                     //Change the picture
                     //Toast.makeText(login.this, "checked", Toast.LENGTH_LONG).show();
                 }
@@ -110,21 +110,21 @@ public class Register extends AppCompatActivity {
         });
     }
     private void setUp(SharedPreferences preferences){
-        if(preferences.contains("agreedToReceiveEmail")){
-            agreedToReceiveEmailIsChecked = preferences.getBoolean("agreedToReceiveEmail", false);
+        if(preferences.contains("agreedToReceiveEmailIsChecked")){
+            agreedToReceiveEmailIsChecked = preferences.getBoolean("agreedToReceiveEmailIsChecked", false);
         }
         if(preferences.contains("agreedToProgramNotification")){
             agreedToProgramNotification = preferences.getBoolean("agreedToProgramNotification", false);
         }
-        if(preferences.contains("agreeToJoinPoolOfPrize")){
+        if(preferences.contains("agreedToJoinBigPrizeIsChecked")){
             agreedToJoinBigPrizeIsChecked = preferences.getBoolean("agreedToJoinBigPrizeIsChecked", false);
         }
-        if(preferences.contains("choiceOfCity")){
-            city = preferences.getString("choiceOfCity", null);
+        if(preferences.contains("city")){
+            city = preferences.getString("city", null);
         }
     }
     private void createUser(){
-        agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();
+       agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();
         agreedToJoinBigPrizeIsChecked = agreeToJoinPoolOfPrize.isChecked();
         agreedToProgramNotification = agreeToProgramNotification.isChecked();
         cityChoice = findViewById(R.id.cityChoices);
@@ -149,10 +149,10 @@ public class Register extends AppCompatActivity {
             Toast.makeText(Register.this, "password required" ,Toast.LENGTH_LONG).show();
             return;
         }
-        if(password.length() < 6){
+       if(password.length() < 6){
             passwordText.setError("Password must be longer than 6");
             passwordText.requestFocus();
-            Toast.makeText(Register.this, "password must be longer than 6",Toast.LENGTH_LONG);
+            Toast.makeText(Register.this, "password must be longer than 6",Toast.LENGTH_LONG).show();
             return;
         }
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(
@@ -160,11 +160,16 @@ public class Register extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            startProfileActivity();
+                            isNewUser = true;
+                            //startProfileActivity();
+                            sendEmailVerification();
                         }
                         else{
                             if(task.getException() instanceof FirebaseAuthUserCollisionException){
-                                userLogin(email, password);
+                              //  userLogin(email, password);
+                                //isNewUser = true;
+                                Toast.makeText(Register.this, "Already Registered", Toast.LENGTH_LONG).show();
+
                                 /*FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
                                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                                 String UID = user.getUid();
@@ -183,6 +188,7 @@ public class Register extends AppCompatActivity {
                     }
                 });
 
+
     }
     @Override
     protected void onStart(){
@@ -198,6 +204,7 @@ public class Register extends AppCompatActivity {
         intent.putExtra("agreedToProgramNotification", agreedToProgramNotification);
         intent.putExtra("agreedToJoinBigPrizeIsChecked", agreedToJoinBigPrizeIsChecked);
         intent.putExtra("city", city);
+        intent.putExtra("isNewUser", isNewUser);
         startActivity(intent);
     }
     @Override
@@ -208,6 +215,7 @@ public class Register extends AppCompatActivity {
         sharePreference.putBoolean("agreedToProgramNotification", agreedToProgramNotification);
         sharePreference.putBoolean("agreedToJoinBigPrizeIsChecked", agreedToJoinBigPrizeIsChecked);
         sharePreference.putString("city", city);
+        sharePreference.putBoolean("isNewUser", isNewUser);
         sharePreference.apply();
     }
     private void userLogin(String email, String password){
@@ -223,5 +231,34 @@ public class Register extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void startLoginActivity(View view){
+        Intent intent = new Intent(this, login.class);
+        startActivity(intent);
+    }
+    private void sendEmailVerification(){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        user.sendEmailVerification()
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            FirebaseAuth.getInstance().signOut();
+                            //Intent intent = new Intent(this, login.class);
+                            //startActivity(intent);
+                            Toast.makeText(Register.this, "Verification Email Sent", Toast.LENGTH_LONG).show();
+                        }
+                        else
+                        {
+
+                            overridePendingTransition(0, 0);
+                            finish();
+                            overridePendingTransition(0, 0);
+                            startActivity(getIntent());
+
+                        }
+                    }
+                });
     }
 }

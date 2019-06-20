@@ -17,13 +17,15 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
 
 public class menu extends AppCompatActivity {
-    //ImageButton torontobtn = findViewById(R.id.im2);
-    //@Override
+
     private boolean agreedToReceiveEmailIsChecked;
     private boolean agreedToProgramNotification;
     private boolean agreedToJoinBigPrizeIsChecked;
+    private boolean loggedIn;
+    private boolean isNewUser;
     private String city;
     private FirebaseAuth mAuth;
+    private User user;
     public static final String NODE_USERS = "users";
 
 
@@ -31,10 +33,17 @@ public class menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         Bundle bundle = getIntent().getExtras();
+        isNewUser = bundle.getBoolean("isNewUser", false);
         agreedToReceiveEmailIsChecked = bundle.getBoolean("agreedToReceiveEmailIsChecked");
         agreedToProgramNotification = bundle.getBoolean("agreedToProgramNotification");
         agreedToJoinBigPrizeIsChecked = bundle.getBoolean("agreedToJoinBigPrizeIsChecked");
         city = bundle.getString("city");
+        if(isNewUser){
+            agreedToReceiveEmailIsChecked = bundle.getBoolean("agreedToReceiveEmailIsChecked");
+            agreedToProgramNotification = bundle.getBoolean("agreedToProgramNotification");
+            agreedToJoinBigPrizeIsChecked = bundle.getBoolean("agreedToJoinBigPrizeIsChecked");
+            city = bundle.getString("city");
+        }
         mAuth = FirebaseAuth.getInstance();
 
         FirebaseInstanceId.getInstance().getInstanceId()
@@ -44,10 +53,10 @@ public class menu extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             String token = task.getResult().getToken();
                             saveToken(token);
-
                         }
                     }
                 });
+
     }
     public void startVanNavMenu(View view){
         Intent intent = new Intent(this, vanNavMenu.class);
@@ -59,11 +68,24 @@ public class menu extends AppCompatActivity {
     }
     private void saveToken(String token){
         String email = mAuth.getCurrentUser().getEmail();
-        User user = new User(email, token, agreedToReceiveEmailIsChecked, agreedToProgramNotification, agreedToJoinBigPrizeIsChecked,
-                city);
-
         DatabaseReference dbUser = FirebaseDatabase.getInstance().getReference(NODE_USERS);
-        dbUser.child(mAuth.getCurrentUser().getUid()).setValue(user).addOnCompleteListener(
+        String uid = mAuth.getCurrentUser().getUid();
+        if(!isNewUser){
+            user = new User(email, token, agreedToReceiveEmailIsChecked, agreedToProgramNotification, agreedToJoinBigPrizeIsChecked,
+                    city);
+
+        }else {
+            user = new User(email, token, agreedToReceiveEmailIsChecked, agreedToProgramNotification, agreedToJoinBigPrizeIsChecked,
+                    city);
+        }
+
+        dbUser.child(uid).child("agreeToJoinBigPrizeIsChecked").setValue(agreedToJoinBigPrizeIsChecked);
+        dbUser.child(uid).child("agreeToProgramNotification").setValue(agreedToProgramNotification);
+        dbUser.child(uid).child("agreeToReceiveEmailIsChecked").setValue(agreedToReceiveEmailIsChecked);
+        dbUser.child(uid).child("email").setValue(email);
+        dbUser.child(uid).child("city").setValue(city);
+        dbUser.child(uid).child("token").setValue(token);
+        /*dbUser.child(uid).setValue(user).addOnCompleteListener(
                 new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -72,14 +94,14 @@ public class menu extends AppCompatActivity {
                         }
                     }
                 }
-        );
+        );*/
     }
     @Override
     public void onStart() {
         super.onStart();
         if (mAuth.getCurrentUser() == null) {
             Intent intent = new Intent(this, MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
     }
