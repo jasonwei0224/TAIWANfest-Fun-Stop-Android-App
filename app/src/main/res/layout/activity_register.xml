@@ -38,7 +38,7 @@
         android:scrollbars="vertical"
         android:textAlignment="center"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/signInBtn"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent" />
@@ -58,13 +58,13 @@
         app:layout_constraintGuide_begin="372dp" />
 
     <ImageButton
-        android:id="@+id/signInBtn"
+        android:id="@+id/registerbtn"
         android:layout_width="145dp"
         android:layout_height="43dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:src="@drawable/submitbutton"
+        android:src="@drawable/registerbtn"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

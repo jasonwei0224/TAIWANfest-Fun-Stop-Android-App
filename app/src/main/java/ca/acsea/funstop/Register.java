@@ -102,7 +102,7 @@ public class Register extends AppCompatActivity {
                 }
             }
         });
-        findViewById(R.id.signInBtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.registerbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 createUser();

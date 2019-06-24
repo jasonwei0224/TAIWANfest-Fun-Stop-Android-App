@@ -1,5 +1,8 @@
 package ca.acsea.funstop;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -54,6 +57,8 @@ public class TorFunStop extends AppCompatActivity {
 
     private TextView torNotificationTitle;
     private TextView torNotificationBody;
+    private String title;
+    private String body;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,22 +86,42 @@ public class TorFunStop extends AppCompatActivity {
         }catch (Exception e){
 
         }
-        LocalBroadcastManager.getInstance(this).registerReceiver(broadcastHandler, new IntentFilter("ca.acsea.myapplication_message"));
+        LocalBroadcastManager.getInstance(this).registerReceiver(broadcastHandler, new IntentFilter("ca.acsea.funstop_message"));
+
         torNotificationTitle = findViewById(R.id.TorNotificationTitle);
         torNotificationBody = findViewById(R.id.TorNotificationBody);
+        Intent intent2 = new Intent(getApplicationContext(), TorFunStop.class);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 1, intent2, 0);
+
+        Notification notification = new Notification.Builder(getApplicationContext())
+                .setContentTitle(title)
+                .setContentText(body)
+                .setContentIntent(pendingIntent)
+                //.addAction(android.R.drawable.sym_action_chat, "Chat", pendingIntent)
+                .setSmallIcon(android.R.drawable.sym_def_app_icon)
+                .build();
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+
+        notificationManager.notify(1, notification);
+
         if(getIntent().getExtras() != null){
             for(String key: getIntent().getExtras().keySet()){
                 if(key.equals("title")){
+                    title = getIntent().getExtras().getString("title");
                     torNotificationTitle.setText(getIntent().getExtras().getString("title"));
                     torNotificationTitle.setVisibility(View.VISIBLE);
                    // torNotificationTitle.setVisibility(View.VISIBLE);
                 }
                 else if(key.equals("body")){
+                    body = getIntent().getExtras().getString("body");
                     torNotificationBody.setText(getIntent().getExtras().getString("body"));
                     torNotificationBody.setVisibility(View.VISIBLE);
                     //torNotificationBody.setVisibility(View.VISIBLE);
                 }
             }
+
         }
     }
     private void setUp(SharedPreferences prefs){
@@ -256,8 +281,8 @@ public class TorFunStop extends AppCompatActivity {
     private BroadcastReceiver broadcastHandler = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            String title = intent.getStringExtra("title");
-            String body = intent.getStringExtra("body");
+            title = intent.getStringExtra("title");
+            body = intent.getStringExtra("body");
             torNotificationTitle.setText(title);
             torNotificationBody.setText(body);
             torNotificationTitle.setVisibility(View.VISIBLE);
