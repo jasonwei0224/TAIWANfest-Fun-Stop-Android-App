@@ -261,4 +261,24 @@ public class Register extends AppCompatActivity {
                     }
                 });
     }
+    public void changeCheckBox(View view){
+        if(agreeToReceiveEmail.isChecked()){
+            agreeToReceiveEmail.setButtonDrawable(R.drawable.checkedbox);
+        }
+        if(!agreeToReceiveEmail.isChecked()){
+            agreeToReceiveEmail.setButtonDrawable(R.drawable.checkbox);
+        }
+        if(agreeToJoinPoolOfPrize.isChecked()){
+            agreeToJoinPoolOfPrize.setButtonDrawable(R.drawable.checkedbox);
+        }
+        if(!agreeToJoinPoolOfPrize.isChecked()){
+            agreeToJoinPoolOfPrize.setButtonDrawable(R.drawable.checkbox);
+        }
+        if(agreeToProgramNotification.isChecked()){
+            agreeToProgramNotification.setButtonDrawable(R.drawable.checkedbox);
+        }
+        if(!agreeToProgramNotification.isChecked()){
+            agreeToProgramNotification.setButtonDrawable(R.drawable.checkbox);
+        }
+    }
 }

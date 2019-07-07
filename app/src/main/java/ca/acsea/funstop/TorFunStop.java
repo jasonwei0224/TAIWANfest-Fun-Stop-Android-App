@@ -90,22 +90,6 @@ public class TorFunStop extends AppCompatActivity {
 
         torNotificationTitle = findViewById(R.id.TorNotificationTitle);
         torNotificationBody = findViewById(R.id.TorNotificationBody);
-        Intent intent2 = new Intent(getApplicationContext(), TorFunStop.class);
-
-        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 1, intent2, 0);
-
-        Notification notification = new Notification.Builder(getApplicationContext())
-                .setContentTitle(title)
-                .setContentText(body)
-                .setContentIntent(pendingIntent)
-                //.addAction(android.R.drawable.sym_action_chat, "Chat", pendingIntent)
-                .setSmallIcon(android.R.drawable.sym_def_app_icon)
-                .build();
-
-        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-
-        notificationManager.notify(1, notification);
-
         if(getIntent().getExtras() != null){
             for(String key: getIntent().getExtras().keySet()){
                 if(key.equals("title")){

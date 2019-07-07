@@ -45,6 +45,7 @@
                 android:textStyle="bold" />
 
             <TableLayout
+                android:id="@+id/dayOneProgramOne"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp">
@@ -68,7 +69,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag_location_icon" />
+                                app:srcCompat="@drawable/map_icon_red" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -112,7 +113,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/dividerOne"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -120,6 +121,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayOneProgramTwo"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -142,7 +144,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag_location_icon" />
+                                app:srcCompat="@drawable/map_icon_blue" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -188,7 +190,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView22"
+                android:id="@+id/dividerTwo"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -196,6 +198,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayThreeProgramOne"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -219,7 +222,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag_location_icon" />
+                                app:srcCompat="@drawable/map_icon_purple" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -263,7 +266,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/dividerThree"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -271,6 +274,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayTwoProgramOne"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -293,7 +297,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag_location_icon" />
+                                app:srcCompat="@drawable/map_icon_darkgreen" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -351,6 +355,7 @@
                 android:textStyle="bold" />
 
             <TableLayout
+                android:id="@+id/dayTwoProgramTwo"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="5dp">
@@ -374,7 +379,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag_location_icon" />
+                                app:srcCompat="@drawable/map_icon_green" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -419,7 +424,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView23"
+                android:id="@+id/dividerFour"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -427,6 +432,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayThreeProgramTwo"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -449,7 +455,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag_location_icon" />
+                                app:srcCompat="@drawable/map_icon_grey" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -493,7 +499,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/dividerFive"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -501,6 +507,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayOneProgramThree"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -567,7 +574,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView25"
+                android:id="@+id/dividerSix"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -575,6 +582,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayThreeProgramThree"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -641,7 +649,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView12"
+                android:id="@+id/dividerSeven"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -649,6 +657,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayThreeProgramFour"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -726,6 +735,7 @@
                 android:textStyle="bold" />
 
             <TableLayout
+                android:id="@+id/dayTwoProgramThree"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingTop="5dp">
@@ -793,7 +803,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView24"
+                android:id="@+id/dividerEight"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -801,6 +811,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayThreeProgramFive"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -867,7 +878,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView21"
+                android:id="@+id/dividerNine"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -875,6 +886,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayOneProgramFour"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -941,7 +953,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/dividerTen"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -949,6 +961,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayOneProgramFive"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -1015,7 +1028,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView19"
+                android:id="@+id/dividerEleven"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -1023,6 +1036,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayOneProgramSix"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -1089,7 +1103,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView20"
+                android:id="@+id/dividerTwelve"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -1097,6 +1111,7 @@
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
+                android:id="@+id/dayOneProgramSeven"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -1171,7 +1186,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="27dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
@@ -1187,7 +1202,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:color/transparent"
@@ -1202,7 +1217,7 @@
         android:id="@+id/VanDayThreeBtn"
         android:layout_width="61dp"
         android:layout_height="39dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginBottom="27dp"

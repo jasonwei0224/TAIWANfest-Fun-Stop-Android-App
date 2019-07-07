@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
@@ -33,7 +34,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                     .setContentText(body)
                     .setContentIntent(pendingIntent)
                     .setStyle(new Notification.BigTextStyle().bigText(body))
-                    .setSmallIcon(android.R.drawable.sym_def_app_icon)
+                    .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.notification_icon))
+                    .setSmallIcon(R.drawable.notification_icon)
                     .build();
 
             NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);

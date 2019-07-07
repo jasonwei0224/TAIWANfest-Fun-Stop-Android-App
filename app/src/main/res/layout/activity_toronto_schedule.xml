@@ -112,7 +112,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/dividerOne"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -188,7 +188,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView22"
+                android:id="@+id/dividerTwo"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -263,7 +263,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/dividerThree"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -419,7 +419,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView23"
+                android:id="@+id/dividerFour"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -493,7 +493,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/dividerFive"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -567,7 +567,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView25"
+                android:id="@+id/dividerSix"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -641,7 +641,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView12"
+                android:id="@+id/dividerSeven"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -793,7 +793,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView24"
+                android:id="@+id/dividerEight"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -867,7 +867,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView21"
+                android:id="@+id/dividerNine"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -941,7 +941,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/dividerTen"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -1015,7 +1015,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView19"
+                android:id="@+id/dividerEleven"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -1089,7 +1089,7 @@
             </TableLayout>
 
             <ImageView
-                android:id="@+id/imageView20"
+                android:id="@+id/dividerTwelve"
                 android:layout_width="match_parent"
                 android:layout_height="11dp"
                 android:layout_marginBottom="5dp"
@@ -1171,7 +1171,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:color/transparent"
@@ -1187,7 +1187,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="27dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
@@ -1201,7 +1201,7 @@
         android:id="@+id/dayThreeBtn"
         android:layout_width="61dp"
         android:layout_height="39dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginBottom="27dp"

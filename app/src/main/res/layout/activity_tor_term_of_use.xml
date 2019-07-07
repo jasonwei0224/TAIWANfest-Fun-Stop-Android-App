@@ -46,6 +46,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Term_Of_Use"
+                android:textSize="24sp" />
+        </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>

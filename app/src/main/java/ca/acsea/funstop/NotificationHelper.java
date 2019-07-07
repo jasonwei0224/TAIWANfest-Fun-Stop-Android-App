@@ -3,6 +3,7 @@ package ca.acsea.funstop;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.os.Vibrator;
@@ -24,12 +25,13 @@ class NotificationHelper {
 
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(context, MainActivity.CHANNEL_ID);
-        notificationBuilder.setSmallIcon(R.drawable.common_google_signin_btn_icon_dark);
+        notificationBuilder.setSmallIcon(R.drawable.notification_icon);
+
         notificationBuilder.setContentTitle(title);
         notificationBuilder.setContentText(body);
         notificationBuilder.setContentIntent(pendingIntent);
         notificationBuilder.setLights(Color.RED, 3000, 3000);
-        notificationBuilder.setVibrate(new long[]{0, 1000, 1000});
+        notificationBuilder.setVibrate(new long[]{0, 1000});
         notificationBuilder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
         notificationBuilder.setAutoCancel(true);
         notificationBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
