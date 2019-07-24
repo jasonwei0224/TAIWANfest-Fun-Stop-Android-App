@@ -8,8 +8,8 @@ import android.content.SharedPreferences;
 import android.media.AudioAttributes;
 import android.media.RingtoneManager;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -19,7 +19,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity {
@@ -90,16 +89,16 @@ public class login extends AppCompatActivity {
             Toast.makeText(login.this, "password required" ,Toast.LENGTH_LONG).show();
             return;
         }
+        //checkIfEmailVerified();
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(!task.isSuccessful()){
-                    loggedIn = true;
-                    startProfileActivity();
-                }else if(task.getException() !=null) {
-                    Toast.makeText(login.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                }else{
+                if(task.isSuccessful()){
                     checkIfEmailVerified();
+                    loggedIn = true;
+                    //startProfileActivity();
+                }else if(task.getException() !=null) {
+                    Toast.makeText(login.this, task.getException().getLocalizedMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -158,7 +157,7 @@ public class login extends AppCompatActivity {
                     startProfileActivity();
                 }else{
                     if(task.getException()!=null) {
-                        Toast.makeText(login.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(login.this, task.getException().getLocalizedMessage(), Toast.LENGTH_LONG).show();
                     }
                 }
             }
@@ -192,8 +191,9 @@ public class login extends AppCompatActivity {
         if (user.isEmailVerified())
         {
             // user is verified, so you can finish this activity or send user to activity which you want.
-            startProfileActivity();
+
             Toast.makeText(login.this, "Successfully logged in", Toast.LENGTH_SHORT).show();
+            startProfileActivity();
         }
         else
         {

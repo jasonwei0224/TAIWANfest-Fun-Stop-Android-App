@@ -1,7 +1,7 @@
 package ca.acsea.funstop;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -15,7 +15,7 @@ public class termofuse extends AppCompatActivity {
         setContentView(R.layout.activity_termofuse);
 
     Bundle bundle = getIntent().getExtras();
-        bundle.getBoolean("loginStatus",false);
+        loggedIn = bundle.getBoolean("loginStatus",false);
     backbtn = findViewById(R.id.termOfUseBackBtn);
         backbtn.setOnClickListener(new View.OnClickListener() {
         @Override

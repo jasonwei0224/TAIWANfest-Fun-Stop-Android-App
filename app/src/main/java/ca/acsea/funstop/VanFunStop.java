@@ -5,15 +5,20 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.vision.barcode.Barcode;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class VanFunStop extends AppCompatActivity {
     private boolean vanStationOneComplete;
@@ -26,6 +31,8 @@ public class VanFunStop extends AppCompatActivity {
     private boolean vanStationEightComplete;
     private boolean vanStationNineComplete;
     private boolean vanStationTenComplete;
+
+    private AdView mAdView;
 
     private TableLayout vanStationOne;
     private TableLayout vanStationTwo;
@@ -55,7 +62,14 @@ public class VanFunStop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_van_fun_stop);
-
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         vanStationOne = findViewById(R.id.vanProgramOne);
         vanStationTwo = findViewById(R.id.vanProgramTwo);
         vanStationThree = findViewById(R.id.vanProgramThree);
@@ -77,7 +91,7 @@ public class VanFunStop extends AppCompatActivity {
         }catch (Exception e){
 
         }
-        LocalBroadcastManager.getInstance(this).registerReceiver(broadcastHandler, new IntentFilter("ca.acsea.myapplication_message"));
+        /*LocalBroadcastManager.getInstance(this).registerReceiver(broadcastHandler, new IntentFilter("ca.acsea.myapplication_message"));
         vanNotificationTitle = findViewById(R.id.vanNotificationTitle);
         vanNotificationBody = findViewById(R.id.vanNotificationBody);
         if(getIntent().getExtras() != null){
@@ -93,7 +107,7 @@ public class VanFunStop extends AppCompatActivity {
                     //torNotificationBody.setVisibility(View.VISIBLE);
                 }
             }
-        }
+        }*/
     }
 
     private BroadcastReceiver broadcastHandler = new BroadcastReceiver() {

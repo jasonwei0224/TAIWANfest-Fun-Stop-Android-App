@@ -1,16 +1,11 @@
 package ca.acsea.funstop;
 
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.AudioAttributes;
-import android.media.RingtoneManager;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -47,30 +42,13 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         SharedPreferences prefs = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
         setUp(prefs);
-
-
+        mAuth = FirebaseAuth.getInstance();
         agreeToReceiveEmail = findViewById(R.id.agreeToReceiveEmail);
         agreeToJoinPoolOfPrize = findViewById(R.id.agreeToJoinPoolOfPrize);
         agreeToProgramNotification = findViewById(R.id.agreeToReceiveProgramNotification);
         /*agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();*/
         editTextEmail = findViewById(R.id.email);
         passwordText = findViewById(R.id.loginPagePassword);
-
-        mAuth = FirebaseAuth.getInstance();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
-            channel.enableVibration(true);
-            channel.enableLights(true);
-            AudioAttributes audioAttributes = new AudioAttributes.Builder()
-                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-                    .setUsage(AudioAttributes.USAGE_NOTIFICATION)
-                    .build();
-            channel.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION), audioAttributes);
-
-            channel.setDescription(CHANNEL_DESC);
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel);
-        }
 
        agreeToReceiveEmail.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -162,40 +140,26 @@ public class Register extends AppCompatActivity {
                         if(task.isSuccessful()){
                             isNewUser = true;
                             //startProfileActivity();
-                            sendEmailVerification();
+                            sendEmailVerification(email, password);
                         }
                         else{
                             if(task.getException() instanceof FirebaseAuthUserCollisionException){
-                              //  userLogin(email, password);
-                                //isNewUser = true;
                                 Toast.makeText(Register.this, "Already Registered", Toast.LENGTH_LONG).show();
-
-                                /*FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-                                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                                String UID = user.getUid();
-                                String test = firebaseDatabase.getReference("users").child(UID).child("agreedToJoinBigPrize").toString();
-                                Log.d("abcd", test);*/
-
-                                // if user already exists, get data from database for the subscription.
-                                //save the value into the variables
-
                             }else{
                                 if(task.getException() !=null) {
-                                    Toast.makeText(Register.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                    Toast.makeText(Register.this, task.getException().getLocalizedMessage(), Toast.LENGTH_LONG).show();
                                 }
                             }
                         }
                     }
                 });
-
-
     }
     @Override
     protected void onStart(){
         super.onStart();
-        if(mAuth.getCurrentUser() != null){
+       /* if(mAuth.getCurrentUser() != null){
             startProfileActivity();
-        }
+        }*/
     }
     private void startProfileActivity(){
         Intent intent = new Intent(this, menu.class);
@@ -233,10 +197,12 @@ public class Register extends AppCompatActivity {
         });
     }
     public void startLoginActivity(View view){
+        //createUser();
         Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
-    private void sendEmailVerification(){
+    private void sendEmailVerification(String email, String password){
+        mAuth.signInWithEmailAndPassword(email, password);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         user.sendEmailVerification()
@@ -247,6 +213,7 @@ public class Register extends AppCompatActivity {
                             FirebaseAuth.getInstance().signOut();
                             //Intent intent = new Intent(this, login.class);
                             //startActivity(intent);
+                            FirebaseAuth.getInstance().signOut();
                             Toast.makeText(Register.this, "Verification Email Sent", Toast.LENGTH_LONG).show();
                         }
                         else

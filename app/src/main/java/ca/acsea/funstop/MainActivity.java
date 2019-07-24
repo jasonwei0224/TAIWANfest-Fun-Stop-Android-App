@@ -2,8 +2,12 @@ package ca.acsea.funstop;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class MainActivity extends AppCompatActivity {
     private final static int SPLASH_TIMEOUT = 5000;
@@ -19,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         },SPLASH_TIMEOUT);
+
     }
 }
