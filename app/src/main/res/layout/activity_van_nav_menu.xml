@@ -10,19 +10,18 @@
     <ImageButton
         android:id="@+id/VanAboutFestivalBtn"
         android:layout_width="276dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginBottom="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
         android:clickable="true"
         android:onClick="startAboutActivity"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintBottom_toTopOf="@+id/VanFunStopBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222"
         app:srcCompat="@drawable/aboutfestivalbtn" />
 
     <ImageButton
@@ -31,7 +30,7 @@
         android:layout_height="119dp"
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
@@ -50,10 +49,10 @@
         android:layout_height="119dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:onClick="startVanFunstopActivity"
         android:scaleType="fitCenter"
@@ -107,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
-        android:onClick="startPirvacyPolicyActivity"
+        android:onClick="startPrivacyPolicyActivity"
         android:text="@string/Privacy_Policy"
         android:textColor="@color/lightBlue"
         android:textStyle="bold"
@@ -131,4 +130,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -57,4 +57,6 @@
     <string name="Term_Of_Use"> <u> TERM OF USE </u> </string>
     <string name="Register"><u> Register </u></string>
     <string name="ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_id_full_page">ca-app-pub-5912187966334935/6071160199</string>
+
 </resources>
