@@ -5,52 +5,48 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TableLayout;
+import android.widget.ScrollView;
 
 public class schedule extends AppCompatActivity {
-    private ImageButton dayOne;
-    private ImageButton dayTwo;
-    private ImageButton dayThree;
-    private TableLayout dayOneProgramOne;
-    private TableLayout dayOneProgramTwo;
-    private TableLayout dayOneProgramThree;
-    private TableLayout dayOneProgramFour;
-    private TableLayout dayOneProgramFive;
-    private TableLayout dayOneProgramSix;
-    private TableLayout dayOneProgramSeven;
-    private TableLayout dayOneProgramEight;
+    private ScrollView dayOne;
+    private ScrollView dayTwo;
+    private ScrollView dayThree;
+    private ImageButton dayOneBtn;
+    private ImageButton dayTwoBtn;
+    private ImageButton dayThreeBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
 
-        dayOne = findViewById(R.id.vanDayOneBtn);
-        dayTwo = findViewById(R.id.VanDayTwoBtn);
-        dayThree = findViewById(R.id.VanDayThreeBtn);
-        dayOneProgramOne = findViewById(R.id.dayOneProgramOne);
-        dayOneProgramTwo = findViewById(R.id.dayOneProgramTwo);
-        dayOneProgramThree = findViewById(R.id.dayOneProgramThree);
-        dayOneProgramFour = findViewById(R.id.dayOneProgramFour);
-        dayOneProgramFive = findViewById(R.id.dayOneProgramFive);
-        dayOneProgramSix = findViewById(R.id.dayOneProgramSix);
-        dayOneProgramSeven = findViewById(R.id.dayOneProgramSeven);
+        dayOne = findViewById(R.id.vanDay1);
+        dayTwo = findViewById(R.id.vanDay2);
+        dayThree = findViewById(R.id.vanDay3);
+        dayOneBtn = findViewById(R.id.vanDayOneBtn);
+        dayTwoBtn = findViewById(R.id.VanDayTwoBtn);
+        dayThreeBtn = findViewById(R.id.VanDayThreeBtn);
 
-        dayTwo.setAlpha(0.3f);
-        dayThree.setAlpha(0.3f);
+        dayOneBtn.setAlpha(1f);
+        dayTwoBtn.setAlpha(0.3f);
+        dayThreeBtn.setAlpha(0.3f);
+        dayOne.setVisibility(View.VISIBLE);
+        dayTwo.setVisibility(View.GONE);
+        dayThree.setVisibility(View.GONE);
 
-        dayOne.setOnClickListener(new View.OnClickListener() {
+        dayOneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showScheduleOnFirstDay();
             }
         });
-        dayTwo.setOnClickListener(new View.OnClickListener() {
+        dayTwoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showScheduleOnSecondDay();
             }
         });
-        dayThree.setOnClickListener(new View.OnClickListener() {
+        dayThreeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showScheduleOnThirdDay();
@@ -65,32 +61,30 @@ public class schedule extends AppCompatActivity {
 
 
     public void showScheduleOnFirstDay(){
-        dayTwo.setAlpha(0.3f);
-        dayOneProgramOne.setVisibility(View.VISIBLE);
-        dayOneProgramTwo.setVisibility(View.VISIBLE);
-        dayOneProgramThree.setVisibility(View.VISIBLE);
-        dayOneProgramFour.setVisibility(View.VISIBLE);
-        dayOneProgramFive.setVisibility(View.VISIBLE);
-        dayOneProgramSix.setVisibility(View.VISIBLE);
-        dayOneProgramSeven.setVisibility(View.VISIBLE);
-        dayThree.setAlpha(0.3f);
-        dayOne.setAlpha(1.0f);
+        dayTwo.setVisibility(View.GONE);
+        dayThree.setVisibility(View.GONE);
+        dayOne.setVisibility(View.VISIBLE);
+
+        dayOneBtn.setAlpha(1f);
+        dayTwoBtn.setAlpha(0.3f);
+        dayThreeBtn.setAlpha(0.3f);
     }
     public void showScheduleOnSecondDay(){
-        dayOne.setAlpha(0.3f);
-        dayOneProgramOne.setVisibility(View.GONE);
-        dayOneProgramTwo.setVisibility(View.GONE);
-        dayOneProgramThree.setVisibility(View.GONE);
-        dayOneProgramFour.setVisibility(View.GONE);
-        dayOneProgramFive.setVisibility(View.GONE);
-        dayOneProgramSix.setVisibility(View.GONE);
-        dayOneProgramSeven.setVisibility(View.GONE);
-        dayThree.setAlpha(0.3f);
-        dayTwo.setAlpha(1.0f);
+        dayTwo.setVisibility(View.GONE);
+        dayThree.setVisibility(View.GONE);
+        dayOne.setVisibility(View.VISIBLE);
+
+        dayOneBtn.setAlpha(0.3f);
+        dayTwoBtn.setAlpha(1.0f);
+        dayThreeBtn.setAlpha(0.3f);
     }
     public void showScheduleOnThirdDay(){
-        dayOne.setAlpha(0.3f);
-        dayTwo.setAlpha(0.3f);
-        dayThree.setAlpha(1.0f);
+        dayTwo.setVisibility(View.GONE);
+        dayThree.setVisibility(View.GONE);
+        dayOne.setVisibility(View.VISIBLE);
+
+        dayOneBtn.setAlpha(0.3f);
+        dayTwoBtn.setAlpha(0.3f);
+        dayThreeBtn.setAlpha(1f);
     }
 }

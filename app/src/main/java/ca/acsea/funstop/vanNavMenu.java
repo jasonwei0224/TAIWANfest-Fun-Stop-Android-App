@@ -54,6 +54,7 @@ public class vanNavMenu extends AppCompatActivity {
 
     public void startPrivacyPolicyActivity(View view){
         Intent intent = new Intent(this, privacypolicy.class);
+        intent.putExtra("loginStatus", true);
         startActivity(intent);
     }
 

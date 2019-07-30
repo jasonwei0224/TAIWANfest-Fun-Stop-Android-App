@@ -1,17 +1,17 @@
 package ca.acsea.funstop;
 
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -31,6 +31,7 @@ public class VanFunStop extends AppCompatActivity {
     private boolean vanStationEightComplete;
     private boolean vanStationNineComplete;
     private boolean vanStationTenComplete;
+    private boolean vanStationElevenComplete;
 
     private AdView mAdView;
 
@@ -44,6 +45,7 @@ public class VanFunStop extends AppCompatActivity {
     private TableLayout vanStationEight;
     private TableLayout vanStationNine;
     private TableLayout vanStationTen;
+    private TableLayout vanStationEleven;
 
     private String vanStationOneCompleteKey = "vanStationOneComplete" ;
     private String vanStationTwoCompleteKey =  "vanStationTwoComplete";
@@ -55,9 +57,10 @@ public class VanFunStop extends AppCompatActivity {
     private String vanStationEightCompleteKey = "vanStationEightComplete";
     private String vanStationNineCompleteKey = "vanStationNineComplete";
     private String vanStationTenCompleteKey = "vanStationTenComplete";
+    private String vanStationElevenCompleteKey = "van stationElevenComplete";
 
-    private TextView vanNotificationTitle;
-    private TextView vanNotificationBody;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +83,7 @@ public class VanFunStop extends AppCompatActivity {
         vanStationEight = findViewById(R.id.vanProgramEight);
         vanStationNine = findViewById(R.id.vanProgramNine);
         vanStationTen = findViewById(R.id.vanProgramTen);
+        vanStationEleven = findViewById(R.id.vanProgramEleven);
         SharedPreferences prefs = getSharedPreferences("toronto", Context.MODE_PRIVATE);
         setUp(prefs);
         gameComplete();
@@ -91,45 +95,23 @@ public class VanFunStop extends AppCompatActivity {
         }catch (Exception e){
 
         }
-        /*LocalBroadcastManager.getInstance(this).registerReceiver(broadcastHandler, new IntentFilter("ca.acsea.myapplication_message"));
-        vanNotificationTitle = findViewById(R.id.vanNotificationTitle);
-        vanNotificationBody = findViewById(R.id.vanNotificationBody);
-        if(getIntent().getExtras() != null){
-            for(String key: getIntent().getExtras().keySet()){
-                if(key.equals("title")){
-                    vanNotificationTitle.setText(getIntent().getExtras().getString("title"));
-                    vanNotificationTitle.setVisibility(View.VISIBLE);
-                    // torNotificationTitle.setVisibility(View.VISIBLE);
-                }
-                else if(key.equals("body")){
-                    vanNotificationBody.setText(getIntent().getExtras().getString("body"));
-                    vanNotificationBody.setVisibility(View.VISIBLE);
-                    //torNotificationBody.setVisibility(View.VISIBLE);
-                }
-            }
-        }*/
     }
-
-    private BroadcastReceiver broadcastHandler = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String title = intent.getStringExtra("title");
-            String body = intent.getStringExtra("body");
-            vanNotificationTitle.setText(title);
-            vanNotificationBody.setText(body);
-            vanNotificationTitle.setVisibility(View.VISIBLE);
-            vanNotificationBody.setVisibility(View.VISIBLE);
-            //  notification_background.setVisibility(View.VISIBLE);
-        }
-    };
 
     private void gameComplete(){
         if(vanStationOneComplete && vanStationTwoComplete && vanStationThreeComplete
                 && vanStationFourComplete && vanStationFiveComplete && vanStationSixComplete &&
                 vanStationSevenComplete && vanStationEightComplete && vanStationNineComplete
-                && vanStationTenComplete){
-            Button b = findViewById(R.id.finish);
-            b.setVisibility(View.VISIBLE);
+                && vanStationTenComplete && vanStationElevenComplete){
+            ScrollView scrollView = findViewById(R.id.torfunstop);
+            scrollView.setVisibility(View.GONE);
+            ImageButton camera = findViewById(R.id.camerabtn);
+            camera.setAlpha(0.3f);
+            camera.setClickable(false);
+            TextView completed = findViewById(R.id.vancompleted);
+            completed.setVisibility(View.VISIBLE);
+
+            //Button b = findViewById(R.id.finish);
+            //b.setVisibility(View.VISIBLE);
         }
     }
     private void setUp(SharedPreferences prefs){
@@ -193,6 +175,12 @@ public class VanFunStop extends AppCompatActivity {
                 setStationComplete(vanStationTen);
             }
         }
+        if(prefs.contains(vanStationElevenCompleteKey)){
+            vanStationElevenComplete = prefs.getBoolean(vanStationElevenCompleteKey, false);
+            if(vanStationElevenComplete){
+                setStationComplete(vanStationEleven);
+            }
+        }
     }
 
     private void setStationComplete(TableLayout tableLayout){
@@ -246,6 +234,16 @@ public class VanFunStop extends AppCompatActivity {
         } else if (stationNumber == 10){
             vanStationTenComplete = true;
             vanStationTen.setAlpha(0.3f);
+        } else if (stationNumber == 11 ){
+            if(vanStationOneComplete && vanStationTwoComplete && vanStationThreeComplete
+                    && vanStationFourComplete && vanStationFiveComplete && vanStationSixComplete &&
+                    vanStationSevenComplete && vanStationEightComplete && vanStationNineComplete
+                    && vanStationTenComplete) {
+                vanStationElevenComplete = true;
+                vanStationEleven.setAlpha(0.3f);
+            }else{
+                Toast.makeText(VanFunStop.this, "Please come back when you've visit all other locations", Toast.LENGTH_LONG).show();
+            }
         }
     }
     public void onPause() {
@@ -261,6 +259,7 @@ public class VanFunStop extends AppCompatActivity {
         prefEditor.putBoolean(vanStationEightCompleteKey, vanStationEightComplete);
         prefEditor.putBoolean(vanStationNineCompleteKey, vanStationNineComplete);
         prefEditor.putBoolean(vanStationTenCompleteKey, vanStationTenComplete);
+        prefEditor.putBoolean(vanStationElevenCompleteKey, vanStationElevenComplete);
         prefEditor.apply();
     }
 
@@ -275,7 +274,9 @@ public class VanFunStop extends AppCompatActivity {
         vanStationEightComplete = false;
         vanStationNineComplete = false;
         vanStationTenComplete = false;
+        vanStationElevenComplete = false;
     }
+
     public void showRule(View view){
         Intent intent = new Intent(this, rule.class);
         startActivity(intent);

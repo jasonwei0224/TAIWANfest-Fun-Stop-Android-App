@@ -101,10 +101,10 @@
 
     <ImageButton
         android:id="@+id/imageButton45"
-        android:layout_width="303dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="258dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="95dp"
         android:background="@android:color/transparent"
         android:onClick="startTorFunStopActivity"
         android:scaleType="fitCenter"

@@ -28,9 +28,13 @@
         app:srcCompat="@drawable/backbtn" />
 
     <ScrollView
-        android:layout_width="272dp"
-        android:layout_height="385dp"
+        android:layout_width="230dp"
+        android:layout_height="365dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="109dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="165dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +44,32 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="About"
+                android:text="COURAGE"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="none"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/artistic_direction"
+                android:verticalScrollbarPosition="defaultPosition" />
         </LinearLayout>
     </ScrollView>
 

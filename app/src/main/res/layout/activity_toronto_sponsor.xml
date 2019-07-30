@@ -50,35 +50,83 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
 
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/acsealogo" />
+
             <TextView
                 android:id="@+id/textView31"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CO-ORGANIZER"
+                android:text="Co-Producer"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/hfclogo" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Co-Organizer"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/wactlogo" />
 
             <TextView
                 android:id="@+id/textView32"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GOVERNMENTS"
+                android:text="Government"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/canadagov" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/canadaheritagelogo" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rocgov" />
 
             <TextView
                 android:id="@+id/textView33"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MAJOR PARTNERS"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/textView34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="OFFICIAL AIRLINE"
+                android:text="Official Airlines"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
 
@@ -86,15 +134,27 @@
                 android:id="@+id/textView35"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DIAMOND"
+                android:text="Diamond"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fairchildtvlogo" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
 
             <TextView
                 android:id="@+id/textView36"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GOLD"
+                android:text="Gold"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
 
@@ -102,7 +162,7 @@
                 android:id="@+id/textView37"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SILVER"
+                android:text="Silver"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
 
@@ -110,7 +170,7 @@
                 android:id="@+id/textView40"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BRONZE"
+                android:text="Bronze"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
 
@@ -118,7 +178,15 @@
                 android:id="@+id/textView41"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PARTNERS"
+                android:text="Major Partners"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Partners"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp" />
         </LinearLayout>

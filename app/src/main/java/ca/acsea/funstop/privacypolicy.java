@@ -15,7 +15,7 @@ public class privacypolicy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_privacypolicy);
         Bundle bundle = getIntent().getExtras();
-        bundle.getBoolean("loginStatus",false);
+        loggedIn = bundle.getBoolean("loginStatus",false);
         backbtn = findViewById(R.id.privacyPolicyBackBtn);
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override

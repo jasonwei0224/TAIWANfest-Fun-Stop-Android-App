@@ -11,9 +11,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.vision.barcode.Barcode;
 
 public class TorFunStop extends AppCompatActivity {
@@ -27,6 +35,7 @@ public class TorFunStop extends AppCompatActivity {
     private boolean torStationEightComplete;
     private boolean torStationNineComplete;
     private boolean torStationTenComplete;
+    private boolean torStationElevenComplete;
 
     private TableLayout torStationOne;
     private TableLayout torStationTwo;
@@ -38,6 +47,7 @@ public class TorFunStop extends AppCompatActivity {
     private TableLayout torStationEight;
     private TableLayout torStationNine;
     private TableLayout torStationTen;
+    private TableLayout torStationEleven;
 
     private String stationOneCompleteKey = "torStationOneComplete" ;
     private String stationTwoCompleteKey =  "torStationTwoComplete";
@@ -49,16 +59,27 @@ public class TorFunStop extends AppCompatActivity {
     private String stationEightCompleteKey = "torStationEightComplete";
     private String stationNineCompleteKey = "torStationNineComplete";
     private String stationTenCompleteKey = "torStationTenComplete";
+    private String stationElevenCompleteKey = "torStationElevenComplete";
 
     private TextView torNotificationTitle;
     private TextView torNotificationBody;
     private String title;
     private String body;
 
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tor_fun_stop);
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView2);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         torStationOne = findViewById(R.id.TorProgramOne);
         torStationTwo = findViewById(R.id.TorProgramTwo);
         torStationThree = findViewById(R.id.TorProgramThree);
@@ -69,9 +90,11 @@ public class TorFunStop extends AppCompatActivity {
         torStationEight = findViewById(R.id.TorProgramEight);
         torStationNine = findViewById(R.id.TorProgramNine);
         torStationTen = findViewById(R.id.TorProgramTen);
+        torStationEleven = findViewById(R.id.TorProgramEleven);
         SharedPreferences prefs = getSharedPreferences("toronto", Context.MODE_PRIVATE);
         setUp(prefs);
         gameComplete();
+
 
         Intent intent = getIntent();
         Barcode barcode = getIntent().getParcelableExtra("barcode");
@@ -83,8 +106,7 @@ public class TorFunStop extends AppCompatActivity {
         }
         LocalBroadcastManager.getInstance(this).registerReceiver(broadcastHandler, new IntentFilter("ca.acsea.funstop_message"));
 
-        torNotificationTitle = findViewById(R.id.TorNotificationTitle);
-        torNotificationBody = findViewById(R.id.TorNotificationBody);
+
         if(getIntent().getExtras() != null){
             for(String key: getIntent().getExtras().keySet()){
                 if(key.equals("title")){
@@ -100,7 +122,6 @@ public class TorFunStop extends AppCompatActivity {
                     //torNotificationBody.setVisibility(View.VISIBLE);
                 }
             }
-
         }
     }
     private void setUp(SharedPreferences prefs){
@@ -188,7 +209,7 @@ public class TorFunStop extends AppCompatActivity {
         if(torStationOneComplete && torStationTwoComplete && torStationThreeComplete
         && torStationFourComplete && torStationFiveComplete && torStationSixComplete &&
                 torStationSevenComplete && torStationEightComplete &&torStationNineComplete
-                && torStationTenComplete){
+                && torStationTenComplete&& torStationElevenComplete){
             Button b = findViewById(R.id.finish);
             b.setVisibility(View.VISIBLE);
         }
@@ -225,6 +246,16 @@ public class TorFunStop extends AppCompatActivity {
         } else if (number == 10){
             torStationTenComplete = true;
             torStationTen.setAlpha(0.3f);
+        } else if (number == 11){
+            if(torStationOneComplete && torStationTwoComplete && torStationThreeComplete
+                    && torStationFourComplete && torStationFiveComplete && torStationSixComplete &&
+                    torStationSevenComplete && torStationEightComplete &&torStationNineComplete
+                    && torStationTenComplete) {
+                torStationElevenComplete = true;
+                torStationEleven.setAlpha(0.3f);
+            }else{
+                Toast.makeText(TorFunStop.this, "Please come back when you've visit all other locations", Toast.LENGTH_LONG).show();
+            }
         }
     }
 
@@ -241,6 +272,7 @@ public class TorFunStop extends AppCompatActivity {
         prefEditor.putBoolean(stationEightCompleteKey, torStationEightComplete);
         prefEditor.putBoolean(stationNineCompleteKey, torStationNineComplete);
         prefEditor.putBoolean(stationTenCompleteKey, torStationTenComplete);
+        prefEditor.putBoolean(stationElevenCompleteKey, torStationElevenComplete);
         prefEditor.apply();
     }
 
@@ -255,6 +287,14 @@ public class TorFunStop extends AppCompatActivity {
         torStationEightComplete = false;
         torStationNineComplete = false;
         torStationTenComplete = false;
+        torStationElevenComplete = false;
+        ScrollView scrollView = findViewById(R.id.torfunstop);
+        scrollView.setVisibility(View.GONE);
+        ImageButton camera = findViewById(R.id.torcamerabtn);
+        camera.setAlpha(0.3f);
+        camera.setClickable(false);
+        TextView completed = findViewById(R.id.torcompleted);
+        completed.setVisibility(View.VISIBLE);
     }
 
     private BroadcastReceiver broadcastHandler = new BroadcastReceiver() {

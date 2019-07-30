@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.widget.TextView;
 import com.google.android.gms.vision.CameraSource;
 
@@ -44,7 +45,10 @@ public class torCamera extends AppCompatActivity {
                 }
             }
         }
-
+    public void startTorFunStopActivity(View view){
+        Intent intent = new Intent(this, TorFunStop.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,7 +100,7 @@ public class torCamera extends AppCompatActivity {
                     txtResult.post(new Runnable() {
                         @Override
                         public void run() {
-                            txtResult.setText(qrcodes.valueAt(0).displayValue);
+                            //txtResult.setText(qrcodes.valueAt(0).displayValue);
                             Intent intent = new Intent(torCamera.this, TorFunStop.class);
                             intent.putExtra("barcode", qrcodes.valueAt(0));
                             startActivity(intent);

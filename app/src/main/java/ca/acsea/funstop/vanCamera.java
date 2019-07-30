@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.gms.vision.CameraSource;
@@ -47,7 +48,10 @@ public class vanCamera extends AppCompatActivity {
         }
     }
 
-
+    public void startFunStopActivity(View view){
+        Intent intent = new Intent(this, VanFunStop.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
