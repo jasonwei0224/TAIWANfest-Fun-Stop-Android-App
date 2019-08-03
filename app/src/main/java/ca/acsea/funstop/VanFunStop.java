@@ -19,6 +19,9 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class VanFunStop extends AppCompatActivity {
     private boolean vanStationOneComplete;
@@ -59,8 +62,11 @@ public class VanFunStop extends AppCompatActivity {
     private String vanStationTenCompleteKey = "vanStationTenComplete";
     private String vanStationElevenCompleteKey = "van stationElevenComplete";
 
+    private DatabaseReference mDatabase;
 
+    private FirebaseAuth mAuth;
 
+    private boolean isNewUser = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +79,11 @@ public class VanFunStop extends AppCompatActivity {
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mAuth = FirebaseAuth.getInstance();
+        ScrollView scrollView = findViewById(R.id.vanfunstop);
+        scrollView.setVisibility(View.VISIBLE);
+        TextView completed = findViewById(R.id.vancompleted);
+        completed.setVisibility(View.GONE);
         vanStationOne = findViewById(R.id.vanProgramOne);
         vanStationTwo = findViewById(R.id.vanProgramTwo);
         vanStationThree = findViewById(R.id.vanProgramThree);
@@ -102,14 +113,16 @@ public class VanFunStop extends AppCompatActivity {
                 && vanStationFourComplete && vanStationFiveComplete && vanStationSixComplete &&
                 vanStationSevenComplete && vanStationEightComplete && vanStationNineComplete
                 && vanStationTenComplete && vanStationElevenComplete){
-            ScrollView scrollView = findViewById(R.id.torfunstop);
+            ScrollView scrollView = findViewById(R.id.vanfunstop);
             scrollView.setVisibility(View.GONE);
             ImageButton camera = findViewById(R.id.camerabtn);
             camera.setAlpha(0.3f);
             camera.setClickable(false);
             TextView completed = findViewById(R.id.vancompleted);
             completed.setVisibility(View.VISIBLE);
-
+            mDatabase = FirebaseDatabase.getInstance().getReference();
+            String uid = mAuth.getCurrentUser().getUid();
+            mDatabase.child("users").child(uid).child("Complete Fun Stop").setValue("YES");
             //Button b = findViewById(R.id.finish);
             //b.setVisibility(View.VISIBLE);
         }
@@ -280,5 +293,12 @@ public class VanFunStop extends AppCompatActivity {
     public void showRule(View view){
         Intent intent = new Intent(this, rule.class);
         startActivity(intent);
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, vanNavMenu.class);
+        intent.putExtra("isNewUser",isNewUser);
+        startActivity(intent);
+        return;
     }
 }

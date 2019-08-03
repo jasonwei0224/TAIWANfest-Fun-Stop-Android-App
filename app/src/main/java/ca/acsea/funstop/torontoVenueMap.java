@@ -12,7 +12,12 @@ public class torontoVenueMap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toronto_venue_map);
     }
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, torontoNavMenue.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
     public void startTorNavMenue(View view){
         Intent intent = new Intent(this, torontoNavMenue.class);
         startActivity(intent);

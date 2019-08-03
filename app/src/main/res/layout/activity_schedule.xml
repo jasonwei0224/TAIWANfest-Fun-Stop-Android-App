@@ -23,7 +23,7 @@
         android:scrollbarStyle="outsideOverlay"
         android:scrollbarThumbVertical="@color/colorAccent"
         android:scrollbars="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,140 +35,17 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView29"
+                android:id="@+id/twelve"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="12:00 PM"
+                android:text="11:00 AM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-
-            <TableLayout
-                android:id="@+id/dayOneProgramOne"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageButton
-                                    android:id="@+id/imageButton0012"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:background="@android:color/transparent"
-                                    android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/annex" />
-
-                                <TableLayout
-                                    android:layout_width="293dp"
-                                    android:layout_height="55dp">
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:layout_width="279dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="10dp"
-                                            android:gravity="center_vertical"
-                                            android:text="Let's Savour Taiwan"
-                                            android:textColor="@color/browser_actions_text_color"
-                                            android:textSize="18sp" />
-
-                                    </TableRow>
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:id="@+id/textView50"
-                                            android:layout_width="279dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="10dp"
-                                            android:gravity="center_vertical"
-                                            android:text="TAIWANfest"
-                                            android:textColor="@color/colorAccent"
-                                            android:textSize="18sp"
-                                            android:textStyle="italic" />
-                                    </TableRow>
-
-                                </TableLayout>
-
-                            </TableRow>
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginLeft="10dp"
-                                        android:gravity="center_vertical"
-                                        android:text="Home Winds"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:id="@+id/textView50"
-                                        android:layout_width="279dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginLeft="10dp"
-                                        android:gravity="center_vertical"
-                                        android:text="Bao Khanh"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerOne"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramTwo"
@@ -192,9 +69,22 @@
                                 android:id="@+id/imageButton18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton139"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/gamesicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -271,9 +161,23 @@
                                 android:id="@+id/imageButton19"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton140"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -346,9 +250,23 @@
                                 android:id="@+id/imageButton20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton141"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -424,9 +342,23 @@
                                 android:id="@+id/imageButton20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton142"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -502,9 +434,23 @@
                                 android:id="@+id/imageButton20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton173"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -580,9 +526,23 @@
                                 android:id="@+id/imageButton20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton144"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -658,9 +618,23 @@
                                 android:id="@+id/imageButton20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton145"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -736,9 +710,22 @@
                                 android:id="@+id/imageButton20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton146"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -792,7 +779,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="11:00 AM"
+                android:text="11:15 AM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -820,9 +807,23 @@
                                 android:id="@+id/imageButton21"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton147"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -896,9 +897,23 @@
                                 android:id="@+id/imageButton23"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block700_2" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton148"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -977,9 +992,23 @@
                                 android:id="@+id/imageButton26"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton149"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1052,9 +1081,23 @@
                                 android:id="@+id/imageButton31"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/vag" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton150"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1132,9 +1175,23 @@
                                 android:id="@+id/imageButton29"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton151"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1207,9 +1264,23 @@
                                 android:id="@+id/imageButton28"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton152"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1282,9 +1353,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton153"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1362,9 +1447,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton154"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1442,9 +1541,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton155"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1522,9 +1635,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton156"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1597,9 +1724,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton157"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1677,9 +1818,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton158"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1757,9 +1912,22 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton159"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1832,9 +2000,22 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton160"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1912,9 +2093,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton161"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1992,9 +2187,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton162"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2072,9 +2281,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton163"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/filmicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2152,9 +2375,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton164"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2227,9 +2464,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton165"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2307,9 +2558,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton166"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2387,9 +2652,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton167"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2467,9 +2746,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton168"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2542,9 +2835,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton169"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2622,9 +2929,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton170"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/filmicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2702,9 +3023,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton171"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2782,9 +3117,23 @@
                                 android:id="@+id/imageButton24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton172"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -2846,7 +3195,7 @@
         android:scrollbarStyle="outsideOverlay"
         android:scrollbarThumbVertical="@color/colorAccent"
         android:scrollbars="vertical"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -2858,17 +3207,17 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView29"
+                android:id="@+id/twelve"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="11:00 PM"
+                android:text="11:00 AM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramOne"
@@ -2899,8 +3248,20 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:background="@android:color/transparent"
+                                    android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
                                     app:srcCompat="@drawable/annex" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/exhibitionicon" />
 
                                 <TableLayout
                                     android:layout_width="293dp"
@@ -3010,7 +3371,8 @@
 
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:onClick="startVanVenueMap">
 
                             <ImageButton
                                 android:id="@+id/imageButton18"
@@ -3020,6 +3382,17 @@
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton99"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/gamesicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3098,8 +3471,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton101"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3174,8 +3559,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton103"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3253,8 +3650,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton102"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3332,8 +3741,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton104"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3411,8 +3832,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton105"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3490,8 +3923,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton107"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3569,8 +4014,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton106"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3654,8 +4111,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton109"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3731,8 +4200,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block700_2" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton108"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3813,8 +4294,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton113"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3889,8 +4382,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/vag" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton114"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -3970,8 +4475,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/vag" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton115"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4051,8 +4568,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton116"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4127,8 +4656,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton117"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4203,8 +4744,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton112"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4284,8 +4837,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/talkicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4365,8 +4930,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton110"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4446,8 +5023,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton118"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4522,8 +5111,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton119"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4603,8 +5204,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton120"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -4688,8 +5301,20 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:background="@android:color/transparent"
+                                    android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
                                     app:srcCompat="@drawable/block800_3" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton121"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/filmicon" />
 
                                 <TableLayout
                                     android:layout_width="293dp"
@@ -4811,8 +5436,20 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:background="@android:color/transparent"
+                                    android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
                                     app:srcCompat="@drawable/block800_3" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton122"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/talkicon" />
 
                                 <TableLayout
                                     android:layout_width="293dp"
@@ -4935,8 +5572,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5011,8 +5660,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton124"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5092,8 +5753,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton125"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5168,8 +5841,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton126"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/talkicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5244,8 +5929,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton127"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/talkicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5325,8 +6022,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton128"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5442,8 +6151,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton129"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5518,8 +6239,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton130"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5599,8 +6332,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton132"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5680,8 +6425,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton137"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5761,8 +6518,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton136"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5837,8 +6606,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton135"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5913,8 +6694,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton134"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -5995,8 +6788,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton133"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6067,10 +6872,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="startVanVenueMap"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView29"
+                android:id="@+id/twelve"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
                 android:layout_marginTop="5dp"
@@ -6111,8 +6917,20 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:background="@android:color/transparent"
+                                    android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
                                     app:srcCompat="@drawable/annex" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton174"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/exhibitionicon" />
 
                                 <TableLayout
                                     android:layout_width="293dp"
@@ -6230,8 +7048,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton175"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/gamesicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6310,8 +7140,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton176"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6386,8 +7228,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton180"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6465,8 +7319,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton178"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6544,8 +7410,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton179"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6623,8 +7501,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton181"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6702,8 +7592,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton182"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6781,8 +7683,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton183"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6866,8 +7780,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton184"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6943,8 +7869,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block700_2" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton185"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7025,8 +7963,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton186"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7101,8 +8051,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/vag" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton187"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7182,8 +8144,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/vag" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton188"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7263,8 +8237,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton189"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7339,8 +8325,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block600_1" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton190"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7420,8 +8418,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton191"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7501,8 +8511,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton192"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7582,8 +8604,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton193"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/filmicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7667,8 +8701,20 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:background="@android:color/transparent"
+                                    android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
                                     app:srcCompat="@drawable/block800_3" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton194"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/performanceicon" />
 
                                 <TableLayout
                                     android:layout_width="293dp"
@@ -7786,8 +8832,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton195"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -7866,8 +8924,20 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:background="@android:color/transparent"
+                                    android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
                                     app:srcCompat="@drawable/block800_3" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton196"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/performanceicon" />
 
                                 <TableLayout
                                     android:layout_width="293dp"
@@ -7990,8 +9060,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton197"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8071,8 +9153,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton198"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/talkicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8147,8 +9241,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton199"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8223,8 +9329,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton200"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8304,8 +9422,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton201"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8403,8 +9533,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton202"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8502,8 +9644,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton203"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8578,8 +9732,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton204"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8654,8 +9820,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton205"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -8819,7 +9997,7 @@
         android:layout_marginBottom="27dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/torfunstop"
+        app:layout_constraintBottom_toTopOf="@+id/vanDay3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"

@@ -1,6 +1,8 @@
 package ca.acsea.funstop;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,7 @@ public class Profile extends AppCompatActivity {
     public static final String NODE_USERS = "users";
     private FirebaseAuth mAuth;
     //private FirebaseAnalytics mFirebaseAnalytics;
+    private SharedPreferences prefs;
     private boolean agreedToProgramNotification;
     private boolean agreedToJoinBigPrizeIsChecked;
     private boolean agreedToReceiveEmailIsChecked;
@@ -89,5 +92,14 @@ public class Profile extends AppCompatActivity {
             intent.putExtra("agreedToJoinBigPrizeIsChecked", agreedToJoinBigPrizeIsChecked);
             intent.putExtra("city", city);
         }
+    }
+    @Override
+    public void onPause(){
+        super.onPause();
+        SharedPreferences.Editor prefEditor = getSharedPreferences("toronto", Context.MODE_PRIVATE).edit();
+        prefEditor.putBoolean("agreedToReceiveEmailIsChecked", agreedToReceiveEmailIsChecked);
+        prefEditor.putBoolean("agreedToProgramNotification", agreedToProgramNotification);
+        prefEditor.putBoolean("agreedToJoinBigPrizeIsChecked", agreedToJoinBigPrizeIsChecked);
+        prefEditor.apply();
     }
 }

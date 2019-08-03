@@ -17,4 +17,10 @@ public class aboutacsea extends AppCompatActivity {
         Intent intent = new Intent(this, vanNavMenu.class);
         startActivity(intent);
     }
+    public void onBackPressed() {
+        Intent intent = new Intent(this, vanNavMenu.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
 }

@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECIEVE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
 
     <application
         android:allowBackup="true"
@@ -15,17 +15,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:debuggable="true"
+
         android:testOnly="false">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5912187966334935~9433596805"/>
+            android:value="ca-app-pub-1748064502558088~5824947291"/>
         <activity
-            android:name=".login"
+            android:name="login"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustNothing">
 
         </activity>
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON"> </action>
+
+            </intent-filter>
+        </receiver>
         <activity android:name=".torAbout" />
         <activity android:name=".torPrivacyPolicy" />
         <activity android:name=".torTermOfUse" />
@@ -68,7 +74,7 @@
         </service>
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@mipmap/ic_launcher"/>
+            android:resource="@mipmap/ic_launcher_round"/>
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />

@@ -19,10 +19,14 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.vision.barcode.Barcode;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class TorFunStop extends AppCompatActivity {
     private boolean torStationOneComplete;
@@ -65,9 +69,14 @@ public class TorFunStop extends AppCompatActivity {
     private TextView torNotificationBody;
     private String title;
     private String body;
+    private DatabaseReference mDatabase;
+
+    private FirebaseAuth mAuth;
+
+    private boolean funStopComplete;
 
     private AdView mAdView;
-
+    private InterstitialAd mInterstitialAd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +86,8 @@ public class TorFunStop extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
+
+        mAuth = FirebaseAuth.getInstance();
         mAdView = findViewById(R.id.adView2);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -123,6 +134,7 @@ public class TorFunStop extends AppCompatActivity {
                 }
             }
         }
+
     }
     private void setUp(SharedPreferences prefs){
         if(prefs.contains(stationOneCompleteKey)){
@@ -185,6 +197,12 @@ public class TorFunStop extends AppCompatActivity {
                 setStationComplete(torStationTen);
             }
         }
+        if(prefs.contains(stationElevenCompleteKey)){
+            torStationElevenComplete = prefs.getBoolean(stationElevenCompleteKey, false);
+            if(torStationElevenComplete){
+                setStationComplete(torStationEleven);
+            }
+        }
     }
     public void setStationComplete(TableLayout tableLayout){
         tableLayout.setAlpha(0.3f);
@@ -210,8 +228,19 @@ public class TorFunStop extends AppCompatActivity {
         && torStationFourComplete && torStationFiveComplete && torStationSixComplete &&
                 torStationSevenComplete && torStationEightComplete &&torStationNineComplete
                 && torStationTenComplete&& torStationElevenComplete){
-            Button b = findViewById(R.id.finish);
-            b.setVisibility(View.VISIBLE);
+            ScrollView scrollView = findViewById(R.id.torFunStop);
+            scrollView.setVisibility(View.GONE);
+            ImageButton camera = findViewById(R.id.torcamerabtn);
+            camera.setAlpha(0.3f);
+            camera.setClickable(false);
+            funStopComplete = true;
+            TextView completed = findViewById(R.id.torcompleted);
+            completed.setVisibility(View.VISIBLE);
+            mDatabase = FirebaseDatabase.getInstance().getReference();
+            String uid = mAuth.getCurrentUser().getUid();
+            mDatabase.child("users").child(uid).child("Complete Fun Stop").setValue("YES");
+            //Button b = findViewById(R.id.finish);
+            //b.setVisibility(View.VISIBLE);
         }
     }
 
@@ -273,10 +302,21 @@ public class TorFunStop extends AppCompatActivity {
         prefEditor.putBoolean(stationNineCompleteKey, torStationNineComplete);
         prefEditor.putBoolean(stationTenCompleteKey, torStationTenComplete);
         prefEditor.putBoolean(stationElevenCompleteKey, torStationElevenComplete);
+        prefEditor.putBoolean("funStopComplete", funStopComplete);
         prefEditor.apply();
     }
 
-    public void missionComplete(View view){
+    public void missionComplete(){
+
+        ScrollView scrollView = findViewById(R.id.torFunStop);
+        scrollView.setVisibility(View.GONE);
+        ImageButton camera = findViewById(R.id.torcamerabtn);
+        camera.setAlpha(0.3f);
+        camera.setClickable(false);
+        TextView completed = findViewById(R.id.torcompleted);
+        completed.setVisibility(View.VISIBLE);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase.child(mAuth.getCurrentUser().getUid()).child("Complete Fun Stop").setValue("YES");
         torStationOneComplete = false;
         torStationTwoComplete = false;
         torStationThreeComplete = false;
@@ -288,13 +328,6 @@ public class TorFunStop extends AppCompatActivity {
         torStationNineComplete = false;
         torStationTenComplete = false;
         torStationElevenComplete = false;
-        ScrollView scrollView = findViewById(R.id.torfunstop);
-        scrollView.setVisibility(View.GONE);
-        ImageButton camera = findViewById(R.id.torcamerabtn);
-        camera.setAlpha(0.3f);
-        camera.setClickable(false);
-        TextView completed = findViewById(R.id.torcompleted);
-        completed.setVisibility(View.VISIBLE);
     }
 
     private BroadcastReceiver broadcastHandler = new BroadcastReceiver() {
@@ -314,6 +347,15 @@ public class TorFunStop extends AppCompatActivity {
         Intent intent = new Intent(this, torontoRule.class);
         startActivity(intent);
     }
-
+    @Override
+    public void onBackPressed() {
+        if(mInterstitialAd.isLoaded()){
+            mInterstitialAd.show();
+        }
+        Intent intent = new Intent(this, torontoNavMenue.class);
+        intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
 
 }

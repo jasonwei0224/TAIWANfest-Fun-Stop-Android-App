@@ -141,6 +141,7 @@ public class login extends AppCompatActivity {
         intent.putExtra("agreedToReceiveEmailIsChecked", agreedToReceiveEmailIsChecked);
         intent.putExtra("agreedToProgramNotification", agreedToProgramNotification);
         intent.putExtra("agreedToJoinBigPrizeIsChecked", agreedToJoinBigPrizeIsChecked);
+        intent.putExtra("uid", mAuth.getCurrentUser().getUid());
         startActivity(intent);
     }
     public void onPause(){

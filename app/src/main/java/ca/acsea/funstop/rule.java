@@ -12,7 +12,12 @@ public class rule extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rule);
     }
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, vanNavMenu.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
     public void startVanFunStopActivity(View view){
         Intent intent = new Intent(this, VanFunStop.class);
         startActivity(intent);

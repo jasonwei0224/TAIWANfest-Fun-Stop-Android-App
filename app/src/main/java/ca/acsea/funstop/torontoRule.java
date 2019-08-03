@@ -11,8 +11,14 @@ public class torontoRule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toronto_rule);
-    }
 
+    }
+    public void onBackPressed() {
+        Intent intent = new Intent(this, torontoNavMenue.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
     public void startTorFunStopActivity(View view){
         Intent intent = new Intent(this, TorFunStop.class);
         startActivity(intent);

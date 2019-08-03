@@ -49,6 +49,12 @@ public class torCamera extends AppCompatActivity {
         Intent intent = new Intent(this, TorFunStop.class);
         startActivity(intent);
     }
+    public void onBackPressed() {
+        Intent intent = new Intent(this, TorFunStop.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

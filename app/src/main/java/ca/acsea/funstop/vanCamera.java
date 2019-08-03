@@ -47,7 +47,12 @@ public class vanCamera extends AppCompatActivity {
             }
         }
     }
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, VanFunStop.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
     public void startFunStopActivity(View view){
         Intent intent = new Intent(this, VanFunStop.class);
         startActivity(intent);

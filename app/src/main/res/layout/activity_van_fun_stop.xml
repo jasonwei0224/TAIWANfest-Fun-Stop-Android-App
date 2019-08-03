@@ -33,7 +33,7 @@
             <TableLayout
                 android:id="@+id/vanProgramOne"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <TableRow
                     android:id="@+id/vanFirstRow"
@@ -46,9 +46,9 @@
                         android:id="@+id/vanNumberOneIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
+                        android:scaleType="centerInside"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number1icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -57,14 +57,41 @@
                         android:id="@+id/vanProgramOneImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
                         android:visibility="visible"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        app:srcCompat="@drawable/twstage" />
 
-                    <TextView
-                        android:id="@+id/vanProgramOneTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                    <TableLayout
+                        android:layout_width="135dp"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Taiwan Stage"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 800\nBlock"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -86,9 +113,8 @@
                         android:id="@+id/vanNumberTwoIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number2icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -97,13 +123,40 @@
                         android:id="@+id/vanProgramTwoImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/twbookstore" />
 
-                    <TextView
-                        android:id="@+id/VanProgramTwoTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                    <TableLayout
+                        android:layout_width="137dp"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Taiwan Bookstore"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 800\nBlock"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -111,279 +164,6 @@
 
             <TableLayout
                 android:id="@+id/vanProgramThree"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:id="@+id/vanThirdRow"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/vanNumberThreeIcon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number3icon"
-                        tools:layout_editor_absoluteY="33dp" />
-
-                    <ImageView
-                        android:id="@+id/vanProgramThreeImg"
-                        android:layout_width="82dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
-
-                    <TextView
-                        android:id="@+id/vanProgramThreeTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:id="@+id/vanProgramFour"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:id="@+id/vanFourthRow"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/vanNumberFourIcon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number4icon"
-                        tools:layout_editor_absoluteY="33dp" />
-
-                    <ImageView
-                        android:id="@+id/vanProgramFourImg"
-                        android:layout_width="82dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
-
-                    <TextView
-                        android:id="@+id/vanProgramFourTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:id="@+id/vanProgramFive"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:id="@+id/fifthRow"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/vanNumberFiveIcon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number5icon"
-                        tools:layout_editor_absoluteY="33dp" />
-
-                    <ImageView
-                        android:id="@+id/vanProgramFiveImg"
-                        android:layout_width="82dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
-
-                    <TextView
-                        android:id="@+id/vanProgramFiveTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:id="@+id/vanProgramSix"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:id="@+id/vanSixthRow"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/vanNumberSixIcon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number6icon"
-                        tools:layout_editor_absoluteY="33dp" />
-
-                    <ImageView
-                        android:id="@+id/vanProgramSixImg"
-                        android:layout_width="82dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
-
-                    <TextView
-                        android:id="@+id/vanProgramSixTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:id="@+id/vanProgramSeven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:id="@+id/SeventhRow"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/vanNumberSevenIcon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number7icon"
-                        tools:layout_editor_absoluteY="33dp" />
-
-                    <ImageView
-                        android:id="@+id/vanProgramSevenImg"
-                        android:layout_width="82dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
-
-                    <TextView
-                        android:id="@+id/vanProgramSevenTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:id="@+id/vanProgramEight"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:id="@+id/vanEightRow"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/vanNumberEightIcon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number8icon"
-                        tools:layout_editor_absoluteY="33dp" />
-
-                    <ImageView
-                        android:id="@+id/vanProgramEightImg"
-                        android:layout_width="82dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
-
-                    <TextView
-                        android:id="@+id/vanProgramEightTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:id="@+id/vanProgramNine"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:id="@+id/vanNinethRow"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/vnaNumberNineIcon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number9icon"
-                        tools:layout_editor_absoluteY="33dp" />
-
-                    <ImageView
-                        android:id="@+id/vanProgramNineImg"
-                        android:layout_width="82dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
-
-                    <TextView
-                        android:id="@+id/vanProgramNineTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:id="@+id/vanProgramTen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -398,24 +178,507 @@
                         android:id="@+id/vnaNumberTenIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:srcCompat="@drawable/number9icon"
+                        app:srcCompat="@drawable/number3icon"
                         tools:layout_editor_absoluteY="33dp" />
 
                     <ImageView
                         android:id="@+id/vanProgramTenImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/soysaucetest" />
 
-                    <TextView
-                        android:id="@+id/vanProgramTenTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Soy Suace Test"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 700"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanThirdRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberThreeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/number4icon"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramThreeImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/savourtw" />
+
+                    <TableLayout
+                        android:layout_width="136dp"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Let's Savour Taiwan"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 700\nBlock"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanFourthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberFourIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/number5icon"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramFourImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/friendshipkitchen" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Friendship Kitchen"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 700\nBlock"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp">
+
+                <TableRow
+                    android:id="@+id/fifthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberFiveIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/number6icon"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramFiveImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/granville600" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Taiwan New DNA"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 600\nBlock"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanSixthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberSixIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/number7icon"
+                        tools:layout_editor_absoluteY="33dp"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramSixImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/twhandpuppet" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Glove Puppet"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 600\nBlock"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramEight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/SeventhRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberSevenIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/number8icon"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramSevenImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/vagplaza" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="VAG Stage"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:text="VAG Plaza"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramNine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanEightRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vanNumberEightIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/number9icon"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramEightImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/robson" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Home Winds"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="800 Robson Plaza"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/vanProgramTen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/vanNinethRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vnaNumberNineIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/number10icon"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <ImageView
+                        android:id="@+id/vanProgramNineImg"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/annexphoto" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hope Talk"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Orpheum Annex"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -430,31 +693,56 @@
                     android:id="@+id/vanElevenRow"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/vanNumberElevenIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number11icon"
-                        tools:layout_editor_absoluteY="33dp" />
+                        tools:layout_editor_absoluteY="33dp"
+                        android:layout_gravity="center" />
 
                     <ImageView
                         android:id="@+id/vanProgramElevenImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/funstopstationicon" />
 
-                    <TextView
-                        android:id="@+id/vanProgramElevenTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/vanProgramOneTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fun Stop"
+                                android:textColor="@color/colorAccent" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Granville Street 700\nBlock"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -567,7 +855,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ad_id"
+        ads:adUnitId="@string/banner_ad_vancouver"
         ads:layout_constraintBottom_toTopOf="@+id/camerabtn"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintHorizontal_bias="0.508"

@@ -16,4 +16,10 @@ public class torAbout extends AppCompatActivity {
         Intent intent = new Intent(this, torontoNavMenue.class);
         startActivity(intent);
     }
+    public void onBackPressed() {
+        Intent intent = new Intent(this, torontoNavMenue.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
 }

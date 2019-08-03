@@ -9,45 +9,45 @@ import android.widget.ScrollView;
 
 public class torontoSchedule extends AppCompatActivity {
 
-    private ScrollView dayOne;
-    private ScrollView dayTwo;
-    private ScrollView dayThree;
+    private ScrollView torDayOne;
+    private ScrollView torDayTwo;
+    private ScrollView torDayThree;
 
-    private ImageButton dayOneBtn;
-    private ImageButton dayTwoBtn;
-    private ImageButton dayThreeBtn;
+    private ImageButton torDayOneBtn;
+    private ImageButton torDayTwoBtn;
+    private ImageButton torDayThreeBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toronto_schedule);
 
-        dayOneBtn = findViewById(R.id.dayOneBtn);
-        dayTwoBtn = findViewById(R.id.dayTwoBtn);
-        dayThreeBtn = findViewById(R.id.dayThreeBtn);
+        torDayOneBtn = findViewById(R.id.dayOneBtn);
+        torDayTwoBtn = findViewById(R.id.dayTwoBtn);
+        torDayThreeBtn = findViewById(R.id.dayThreeBtn);
 
-        dayOne  = findViewById(R.id.torDay1);
-        dayTwo = findViewById(R.id.torDay2);
-        dayThree = findViewById(R.id.torDay3);
-        dayOne.setVisibility(View.VISIBLE);
-        dayTwo.setVisibility(View.GONE);
-        dayThree.setVisibility(View.GONE);
+        torDayOne  = findViewById(R.id.torDay1);
+        torDayTwo = findViewById(R.id.torDay2);
+        torDayThree = findViewById(R.id.torDay3);
+        torDayOne.setVisibility(View.VISIBLE);
+        torDayTwo.setVisibility(View.GONE);
+        torDayThree.setVisibility(View.GONE);
 
-        dayTwoBtn.setAlpha(0.3f);
-        dayThreeBtn.setAlpha(0.3f);
+        torDayTwoBtn.setAlpha(0.3f);
+        torDayThreeBtn.setAlpha(0.3f);
         //set on click listener  for all three btns
-        dayOneBtn.setOnClickListener(new View.OnClickListener() {
+        torDayOneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showScheduleOnFirstDay();
             }
         });
-        dayTwoBtn.setOnClickListener(new View.OnClickListener() {
+        torDayTwoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showScheduleOnSecondDay();
             }
         });
-        dayThreeBtn.setOnClickListener(new View.OnClickListener() {
+        torDayThreeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showScheduleOnThirdDay();
@@ -55,36 +55,44 @@ public class torontoSchedule extends AppCompatActivity {
         });
     }
 
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, torontoNavMenue.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
 
     public void startTorNavMenue(View view){
         Intent intent = new Intent(this, torontoNavMenue.class);
         startActivity(intent);
 
     }
-
+    public void startTorVenueMap(View view){
+        Intent intent = new Intent(this, torontoVenueMap.class);
+        startActivity(intent);
+    }
     public void showScheduleOnFirstDay(){
-        dayTwoBtn.setAlpha(0.3f);
-        dayThreeBtn.setAlpha(0.3f);
-        dayOneBtn.setAlpha(1.0f);
-        dayTwo.setVisibility(View.GONE);
-        dayThree.setVisibility(View.GONE);
-        dayOne.setVisibility(View.VISIBLE);
+        torDayTwoBtn.setAlpha(0.3f);
+        torDayThreeBtn.setAlpha(0.3f);
+        torDayOneBtn.setAlpha(1.0f);
+        torDayTwo.setVisibility(View.GONE);
+        torDayThree.setVisibility(View.GONE);
+        torDayOne.setVisibility(View.VISIBLE);
     }
     public void showScheduleOnSecondDay(){
-        dayOneBtn.setAlpha(0.3f);
-        dayThreeBtn.setAlpha(0.3f);
-        dayTwoBtn.setAlpha(1.0f);
-        dayTwo.setVisibility(View.GONE);
-        dayThree.setVisibility(View.GONE);
-        dayOne.setVisibility(View.VISIBLE);
+        torDayOneBtn.setAlpha(0.3f);
+        torDayThreeBtn.setAlpha(0.3f);
+        torDayTwoBtn.setAlpha(1.0f);
+        torDayTwo.setVisibility(View.VISIBLE);
+        torDayThree.setVisibility(View.GONE);
+        torDayOne.setVisibility(View.GONE);
     }
     public void showScheduleOnThirdDay(){
-        dayOneBtn.setAlpha(0.3f);
-        dayTwoBtn.setAlpha(0.3f);
-        dayThreeBtn.setAlpha(1.0f);
-        dayTwo.setVisibility(View.GONE);
-        dayThree.setVisibility(View.GONE);
-        dayOne.setVisibility(View.VISIBLE);
+        torDayOneBtn.setAlpha(0.3f);
+        torDayTwoBtn.setAlpha(0.3f);
+        torDayThreeBtn.setAlpha(1.0f);
+        torDayTwo.setVisibility(View.GONE);
+        torDayThree.setVisibility(View.VISIBLE);
+        torDayOne.setVisibility(View.GONE);
     }
 }

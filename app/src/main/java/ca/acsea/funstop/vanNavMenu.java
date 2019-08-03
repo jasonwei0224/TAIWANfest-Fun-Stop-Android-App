@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.AdRequest;
@@ -15,15 +17,36 @@ public class vanNavMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_van_nav_menu);
-        MobileAds.initialize(this,
-                "ca-app-pub-3940256099942544/1033173712");
-
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId(getString(R.string.full_page_ad_vancouver));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
-    }
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
 
+            }
+
+            @Override
+            public void onAdLoaded() {
+               // mAdIsLoading = false;
+                mInterstitialAd.show();
+            }
+
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+                //mAdIsLoading = false;
+            }
+        });
+    }
+    public void onBackPressed() {
+        Intent intent = new Intent(this, menu.class);
+        intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
     public void startAboutActivity(View view){
+
+
         Intent intent = new Intent(this, aboutacsea.class);
         startActivity(intent);
     }
@@ -43,11 +66,6 @@ public class vanNavMenu extends AppCompatActivity {
     }
 
     public void strartVanScheduleActivity(View view){
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
-        }
         Intent intent = new Intent(this, schedule.class);
         startActivity(intent);
     }

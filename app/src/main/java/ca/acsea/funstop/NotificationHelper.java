@@ -36,5 +36,12 @@ class NotificationHelper {
         notificationBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
 
     }
+    static void displayNotification(Context context){
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(context, MainActivity.CHANNEL_ID);
+        notificationBuilder.setVibrate(new long[]{0, 1000});
+        notificationBuilder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
+        notificationBuilder.setAutoCancel(true);
+        notificationBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
 
+    }
 }

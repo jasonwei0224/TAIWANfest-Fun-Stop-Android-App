@@ -9,14 +9,14 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="143dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="26dp"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,89 +29,503 @@
 
             <TextView
                 android:id="@+id/textView27"
-                android:layout_width="144dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="Organizer"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/acsea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/canadacouncilforthearts" />
+                app:srcCompat="@drawable/acsealogo" />
 
             <TextView
                 android:id="@+id/textView31"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="CO-ORGANIZER"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/swact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/wactlogo" />
 
             <TextView
                 android:id="@+id/textView32"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="GOVERNMENTS"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView33"
+            <ImageView
+                android:id="@+id/candagov"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MAJOR PARTNERS"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                app:srcCompat="@drawable/canadagov" />
 
-            <TextView
-                android:id="@+id/textView34"
+            <ImageView
+                android:id="@+id/seperator1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/heritage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/canadaheritagelogo" />
+
+            <ImageView
+                android:id="@+id/seperator1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/councilofarts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/canadacouncilofartslogo" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/roctw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rocgov" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/spotlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spotlightlogo" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/bcgov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/provinceofbc" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/cityofvancouver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cityofvancouver" />
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="OFFICIAL AIRLINE"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/aircanada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/aircanadalogo" />
 
             <TextView
                 android:id="@+id/textView35"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="DIAMOND"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/fairchildtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fairchildtvlogo" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/talenttv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/talenttvlogo" />
 
             <TextView
                 android:id="@+id/textView36"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="GOLD"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/am1470"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/am1470" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/fm961"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fm961" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/news1130"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/news1130" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/yangming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/yangminglogo" />
 
             <TextView
                 android:id="@+id/textView37"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="SILVER"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dvbia" />
 
             <TextView
                 android:id="@+id/textView40"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="BRONZE"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/singtao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/singtao" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/mingbao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mingpaologo" />
+
+            <ImageView
+                android:id="@+id/seperate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/epochtimeslogo" />
+
+            <TextView
+                android:id="@+id/community"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="COMMUNITY SPONSORS"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/encorpreturnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/encorpreturnit" />
+
+            <ImageView
+                android:id="@+id/seperate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/mpmmath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mpm" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="MAJOR PARTNERS"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/seachs" />
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="PARTNERS"
-                android:textColor="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/civictheatre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vancouvercivictheatre" />
+
+            <ImageView
+                android:id="@+id/seperate3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/vag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vancovuerartgallerylogo" />
+
+            <ImageView
+                android:id="@+id/seperate4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/twtourism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/twtourism" />
+
+            <ImageView
+                android:id="@+id/seperate5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/nxne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/nxne" />
+
+            <ImageView
+                android:id="@+id/seperate6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/viff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/viff" />
+
+            <ImageView
+                android:id="@+id/seperate7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/writersfest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vanwritersfest" />
+
+            <ImageView
+                android:id="@+id/seperate8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/fullcircle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fullcircle" />
+
+            <ImageView
+                android:id="@+id/seperate9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/faubourg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/faubourg" />
+
+            <ImageView
+                android:id="@+id/seperate10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/cuppy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cuppy" />
+
+            <ImageView
+                android:id="@+id/seperate11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/shihchien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/shihchienlogo" />
+
+            <ImageView
+                android:id="@+id/seperate12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/shunyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/shunyi" />
+
+            <ImageView
+                android:id="@+id/seperate13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <ImageView
+                android:id="@+id/storyhouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/storyhouse" />
         </LinearLayout>
     </ScrollView>
 

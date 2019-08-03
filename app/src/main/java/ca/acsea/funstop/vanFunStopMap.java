@@ -12,7 +12,12 @@ public class vanFunStopMap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_van_fun_stop_map);
     }
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, VanFunStop.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
     public void startVanFunStopActivity(View view){
         Intent intent = new Intent(this, VanFunStop.class);
         startActivity(intent);

@@ -27,7 +27,7 @@ public class schedule extends AppCompatActivity {
         dayTwoBtn = findViewById(R.id.VanDayTwoBtn);
         dayThreeBtn = findViewById(R.id.VanDayThreeBtn);
 
-        dayOneBtn.setAlpha(1f);
+        //dayOneBtn.setAlpha(1f);
         dayTwoBtn.setAlpha(0.3f);
         dayThreeBtn.setAlpha(0.3f);
         dayOne.setVisibility(View.VISIBLE);
@@ -53,12 +53,20 @@ public class schedule extends AppCompatActivity {
             }
         });
     }
-
+    public void startVanVenueMap(View view){
+        Intent intent =  new Intent(this, map.class);
+        startActivity(intent);
+    }
     public void startVanNavMenu(View view){
         Intent intent = new Intent(this, vanNavMenu.class);
         startActivity(intent);
     }
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, vanNavMenu.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
 
     public void showScheduleOnFirstDay(){
         dayTwo.setVisibility(View.GONE);
@@ -70,9 +78,9 @@ public class schedule extends AppCompatActivity {
         dayThreeBtn.setAlpha(0.3f);
     }
     public void showScheduleOnSecondDay(){
-        dayTwo.setVisibility(View.GONE);
+        dayTwo.setVisibility(View.VISIBLE);
         dayThree.setVisibility(View.GONE);
-        dayOne.setVisibility(View.VISIBLE);
+        dayOne.setVisibility(View.GONE);
 
         dayOneBtn.setAlpha(0.3f);
         dayTwoBtn.setAlpha(1.0f);
@@ -80,11 +88,12 @@ public class schedule extends AppCompatActivity {
     }
     public void showScheduleOnThirdDay(){
         dayTwo.setVisibility(View.GONE);
-        dayThree.setVisibility(View.GONE);
-        dayOne.setVisibility(View.VISIBLE);
+        dayThree.setVisibility(View.VISIBLE);
+        dayOne.setVisibility(View.GONE);
 
         dayOneBtn.setAlpha(0.3f);
         dayTwoBtn.setAlpha(0.3f);
         dayThreeBtn.setAlpha(1f);
     }
+
 }

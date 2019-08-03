@@ -1,8 +1,11 @@
 package ca.acsea.funstop;
 
+import android.content.Context;
 import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -27,10 +30,13 @@ public class menu extends AppCompatActivity {
     public static final String NODE_USERS = "users";
 
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         Bundle bundle = getIntent().getExtras();
+        SharedPreferences prefs = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+
         isNewUser = bundle.getBoolean("isNewUser", false);
         agreedToReceiveEmailIsChecked = bundle.getBoolean("agreedToReceiveEmailIsChecked");
         agreedToProgramNotification = bundle.getBoolean("agreedToProgramNotification");
@@ -41,7 +47,18 @@ public class menu extends AppCompatActivity {
             agreedToProgramNotification = bundle.getBoolean("agreedToProgramNotification");
             agreedToJoinBigPrizeIsChecked = bundle.getBoolean("agreedToJoinBigPrizeIsChecked");
             city = bundle.getString("city");
+        }else{
+            if(prefs.contains("agreedToReceiveEmailIsChecked")){
+                agreedToReceiveEmailIsChecked = prefs.getBoolean("agreedToReceiveEmailIsChecked", false);
+            }
+            if(prefs.contains("agreedToProgramNotification")){
+                agreedToProgramNotification = prefs.getBoolean("agreedToProgramNotification", false);
+            }
+            if(prefs.contains("agreedToJoinBigPrizeIsChecked")){
+                agreedToJoinBigPrizeIsChecked = prefs.getBoolean("agreedToJoinBigPrizeIsChecked", false);
+            }
         }
+
         mAuth = FirebaseAuth.getInstance();
 
         FirebaseInstanceId.getInstance().getInstanceId()
@@ -62,6 +79,7 @@ public class menu extends AppCompatActivity {
     }
     public void startTorNavMenu(View view){
         Intent intent = new Intent(this, torontoNavMenue.class);
+
         startActivity(intent);
     }
     private void saveToken(String token){
@@ -83,16 +101,6 @@ public class menu extends AppCompatActivity {
         dbUser.child(uid).child("email").setValue(email);
         dbUser.child(uid).child("city").setValue(city);
         dbUser.child(uid).child("token").setValue(token);
-        /*dbUser.child(uid).setValue(user).addOnCompleteListener(
-                new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(menu.this, "Token Saved", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }
-        );*/
     }
     @Override
     public void onStart() {
@@ -102,5 +110,24 @@ public class menu extends AppCompatActivity {
             //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        return;
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        SharedPreferences.Editor prefEditor = getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit();
+        prefEditor.putBoolean("agreedToReceiveEmailIsChecked", agreedToReceiveEmailIsChecked);
+        prefEditor.putBoolean("agreedToProgramNotification", agreedToProgramNotification);
+        prefEditor.putBoolean("agreedToJoinBigPrizeIsChecked", agreedToJoinBigPrizeIsChecked);
+        prefEditor.apply();
+
     }
 }

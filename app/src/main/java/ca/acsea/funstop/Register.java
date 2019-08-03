@@ -101,6 +101,14 @@ public class Register extends AppCompatActivity {
             city = preferences.getString("city", null);
         }
     }
+
+    public void onBackPressed() {
+        Intent intent = new Intent(this, login.class);
+        //intent.putExtra("isNewUser",false);
+        startActivity(intent);
+        return;
+    }
+
     private void createUser(){
        agreedToReceiveEmailIsChecked = agreeToReceiveEmail.isChecked();
         agreedToJoinBigPrizeIsChecked = agreeToJoinPoolOfPrize.isChecked();
@@ -133,6 +141,10 @@ public class Register extends AppCompatActivity {
             Toast.makeText(Register.this, "password must be longer than 6",Toast.LENGTH_LONG).show();
             return;
         }
+       if(!agreeToProgramNotification.isChecked()){
+           Toast.makeText(Register.this, "Must agree to receive program notification to use the app", Toast.LENGTH_LONG).show();
+           return;
+       }
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(
                 new OnCompleteListener<AuthResult>() {
                     @Override

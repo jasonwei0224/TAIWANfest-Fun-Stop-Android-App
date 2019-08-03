@@ -20,7 +20,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
         app:adSize="BANNER"
-        app:adUnitId="@string/ad_id"
+        app:adUnitId="@string/banner_ad_toronto"
         app:layout_constraintBottom_toTopOf="@+id/torcamerabtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
@@ -28,9 +28,9 @@
         app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
 
     <ScrollView
-        android:id="@+id/vanDay3"
+        android:id="@+id/torFunStop"
         style="@android:style/Widget.ScrollView"
-        android:layout_width="291dp"
+        android:layout_width="300dp"
         android:layout_height="339dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -39,7 +39,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="100dp"
         android:scrollbarStyle="outsideOverlay"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,9 +66,8 @@
                         android:id="@+id/numberOneIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number1icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -77,13 +76,39 @@
                         android:id="@+id/TorProgramOneImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/twhandpuppet" />
 
-                    <TextView
-                        android:id="@+id/TorProgramOneTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Glove Puppet"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="North Orchard"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -105,9 +130,8 @@
                         android:id="@+id/TorNumberTwoIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number2icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -116,13 +140,40 @@
                         android:id="@+id/TorProgramTwoImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/savourtw" />
 
-                    <TextView
-                        android:id="@+id/TorProgramTwoTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramTwoTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Let's Savour Taiwan"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="South Lawn"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -144,9 +195,8 @@
                         android:id="@+id/TorNumberThreeIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number3icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -155,13 +205,40 @@
                         android:id="@+id/TorProgramThreeImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/twstage" />
 
-                    <TextView
-                        android:id="@+id/TorProgramThreeTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramThreeTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Taiwan Stage"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Boulevard Pavillion"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -183,9 +260,8 @@
                         android:id="@+id/TorNumberFourIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number4icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -194,13 +270,41 @@
                         android:id="@+id/TorProgramFourImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/craft" />
 
-                    <TextView
-                        android:id="@+id/TorProgramFourTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramFourTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Kids Zone"
+                                android:textColor="@color/browser_actions_text_color" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Harbour Kids "
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -222,9 +326,8 @@
                         android:id="@+id/TorNumberFiveIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number5icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -233,13 +336,40 @@
                         android:id="@+id/TorProgramFiveImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/twbookstore" />
 
-                    <TextView
-                        android:id="@+id/TorProgramFiveTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramFiveTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Taiwan Bookstore"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Garage Bays"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -261,9 +391,8 @@
                         android:id="@+id/TorNumberSixIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number6icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -272,13 +401,40 @@
                         android:id="@+id/TorProgramSixImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/friendshipkitchen" />
 
-                    <TextView
-                        android:id="@+id/TorPorgramSixTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorPorgramSixTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Friendship Kitchen"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lakeside Terrace"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -300,9 +456,8 @@
                         android:id="@+id/TornumberSevenIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number7icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -311,13 +466,40 @@
                         android:id="@+id/TorProgramSevenImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/torontohopetalk" />
 
-                    <TextView
-                        android:id="@+id/TorProgramSevenTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramSevenTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hope Talk"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Studio Theatre"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -339,9 +521,8 @@
                         android:id="@+id/TorNumberEightIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number8icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -350,13 +531,40 @@
                         android:id="@+id/TorProgramEightImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/homewindsphoto" />
 
-                    <TextView
-                        android:id="@+id/TorProgramEightTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramEightTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Home Winds"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MBCS"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -378,9 +586,8 @@
                         android:id="@+id/TorNumberNineIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number9icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -389,13 +596,40 @@
                         android:id="@+id/TorprogramNineImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/sorryyouthexhibition" />
 
-                    <TextView
-                        android:id="@+id/TorProgramNineTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramNineTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sorry Youth Exhibition"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Brigantine Room"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -417,9 +651,8 @@
                         android:id="@+id/TorNumberTenIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number10icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -428,13 +661,40 @@
                         android:id="@+id/TorProgramTenImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/taiwannewdna" />
 
-                    <TextView
-                        android:id="@+id/TorProgramTenTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramTenTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Taiwan New DNA"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Brigantine Patio"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -456,9 +716,8 @@
                         android:id="@+id/TorNumberElevenIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="43dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/number11icon"
                         tools:layout_editor_absoluteY="33dp" />
@@ -467,13 +726,39 @@
                         android:id="@+id/TorProgramElevenImg"
                         android:layout_width="82dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/imageplaceholder" />
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/funstopstationicon" />
 
-                    <TextView
-                        android:id="@+id/TorProgramElevenTxt"
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Program 1" />
+                        android:layout_height="55dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TorProgramElevenTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fun Stop Station"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Garage Bays"
+                                android:textColor="@color/browser_actions_text_color" />
+                        </TableRow>
+
+                    </TableLayout>
 
                 </TableRow>
 
@@ -582,6 +867,7 @@
         android:text="Completed"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="36sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
