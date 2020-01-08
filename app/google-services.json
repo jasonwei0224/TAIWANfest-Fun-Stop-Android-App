@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "778926133465",
+    "firebase_url": "https://acsea-apps.firebaseio.com",
+    "project_id": "acsea-apps",
+    "storage_bucket": "acsea-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778926133465:android:74b196145fbe2068",
+        "android_client_info": {
+          "package_name": "ca.acsea.funstop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778926133465-7mbuektipmhb7vo1tlihqei6n121es8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT_2_jADhGx8JaKWW_YTYJ33S2V7cyJpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778926133465-7mbuektipmhb7vo1tlihqei6n121es8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

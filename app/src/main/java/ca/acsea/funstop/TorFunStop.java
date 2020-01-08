@@ -97,11 +97,11 @@ public class TorFunStop extends AppCompatActivity {
         torStationFour = findViewById(R.id.TorProgramFour);
         torStationFive = findViewById(R.id.TorProgramFive);
         torStationSix = findViewById(R.id.TorProgramSix);
-        torStationSeven = findViewById(R.id.TorProgramSeven);
-        torStationEight = findViewById(R.id.TorProgramEight);
-        torStationNine = findViewById(R.id.TorProgramNine);
-        torStationTen = findViewById(R.id.TorProgramTen);
-        torStationEleven = findViewById(R.id.TorProgramEleven);
+       // torStationSeven = findViewById(R.id.TorProgramSeven);
+        //torStationEight = findViewById(R.id.TorProgramEight);
+       // torStationNine = findViewById(R.id.TorProgramNine);
+       // torStationTen = findViewById(R.id.TorProgramTen);
+      //  torStationEleven = findViewById(R.id.TorProgramEleven);
         SharedPreferences prefs = getSharedPreferences("toronto", Context.MODE_PRIVATE);
         setUp(prefs);
         gameComplete();
@@ -173,7 +173,7 @@ public class TorFunStop extends AppCompatActivity {
                 setStationComplete(torStationSix);
             }
         }
-        if(prefs.contains(stationSevenCompleteKey)){
+        /*if(prefs.contains(stationSevenCompleteKey)){
             torStationSevenComplete = prefs.getBoolean(stationSevenCompleteKey, false);
             if(torStationSevenComplete){
                 setStationComplete(torStationSeven);
@@ -202,7 +202,7 @@ public class TorFunStop extends AppCompatActivity {
             if(torStationElevenComplete){
                 setStationComplete(torStationEleven);
             }
-        }
+        }*/
     }
     public void setStationComplete(TableLayout tableLayout){
         tableLayout.setAlpha(0.3f);
@@ -224,6 +224,22 @@ public class TorFunStop extends AppCompatActivity {
     }
 
     public void gameComplete(){
+        if(torStationOneComplete && torStationTwoComplete && torStationThreeComplete
+                && torStationFourComplete && torStationFiveComplete && torStationSixComplete){
+            ScrollView scrollView = findViewById(R.id.torFunStop);
+            scrollView.setVisibility(View.GONE);
+            ImageButton camera = findViewById(R.id.torcamerabtn);
+            camera.setAlpha(0.3f);
+            camera.setClickable(false);
+            funStopComplete = true;
+            TextView completed = findViewById(R.id.torcompleted);
+            completed.setVisibility(View.VISIBLE);
+            mDatabase = FirebaseDatabase.getInstance().getReference();
+            String uid = mAuth.getCurrentUser().getUid();
+            mDatabase.child("users").child(uid).child("Complete Fun Stop").setValue("YES");
+            //Button b = findViewById(R.id.finish);
+            //b.setVisibility(View.VISIBLE);
+        }
         if(torStationOneComplete && torStationTwoComplete && torStationThreeComplete
         && torStationFourComplete && torStationFiveComplete && torStationSixComplete &&
                 torStationSevenComplete && torStationEightComplete &&torStationNineComplete
@@ -260,10 +276,15 @@ public class TorFunStop extends AppCompatActivity {
         } else if (number == 5){
             torStationFiveComplete = true;
             torStationFive.setAlpha(0.3f);
-        } else if (number == 6){
-            torStationSixComplete = true;
-            torStationSix.setAlpha(0.3f);
-        } else if (number == 7){
+        } else if (number == 6) {
+            if (torStationOneComplete && torStationTwoComplete && torStationThreeComplete
+                    && torStationFourComplete && torStationFiveComplete) {
+                torStationSixComplete = true;
+                torStationSix.setAlpha(0.3f);
+            } else {
+                Toast.makeText(TorFunStop.this, "Please come back when you've visit all other locations", Toast.LENGTH_LONG).show();
+
+            }/* else if (number == 7){
             torStationSevenComplete = true;
             torStationSeven.setAlpha(0.3f);
         } else if (number == 8){
@@ -285,6 +306,7 @@ public class TorFunStop extends AppCompatActivity {
             }else{
                 Toast.makeText(TorFunStop.this, "Please come back when you've visit all other locations", Toast.LENGTH_LONG).show();
             }
+        }*/
         }
     }
 
@@ -297,11 +319,11 @@ public class TorFunStop extends AppCompatActivity {
         prefEditor.putBoolean(stationFourCompleteKey, torStationFourComplete);
         prefEditor.putBoolean(stationFiveCompleteKey, torStationFiveComplete);
         prefEditor.putBoolean(stationSixCompleteKey, torStationSixComplete);
-        prefEditor.putBoolean(stationSevenCompleteKey, torStationSevenComplete);
-        prefEditor.putBoolean(stationEightCompleteKey, torStationEightComplete);
-        prefEditor.putBoolean(stationNineCompleteKey, torStationNineComplete);
-        prefEditor.putBoolean(stationTenCompleteKey, torStationTenComplete);
-        prefEditor.putBoolean(stationElevenCompleteKey, torStationElevenComplete);
+     //   prefEditor.putBoolean(stationSevenCompleteKey, torStationSevenComplete);
+     //   prefEditor.putBoolean(stationEightCompleteKey, torStationEightComplete);
+      //  prefEditor.putBoolean(stationNineCompleteKey, torStationNineComplete);
+      //  prefEditor.putBoolean(stationTenCompleteKey, torStationTenComplete);
+      //  prefEditor.putBoolean(stationElevenCompleteKey, torStationElevenComplete);
         prefEditor.putBoolean("funStopComplete", funStopComplete);
         prefEditor.apply();
     }
@@ -323,11 +345,11 @@ public class TorFunStop extends AppCompatActivity {
         torStationFourComplete = false;
         torStationFiveComplete = false;
         torStationSixComplete = false;
-        torStationSevenComplete = false;
-        torStationEightComplete = false;
-        torStationNineComplete = false;
-        torStationTenComplete = false;
-        torStationElevenComplete = false;
+      //  torStationSevenComplete = false;
+        //torStationEightComplete = false;
+        //torStationNineComplete = false;
+        //torStationTenComplete = false;
+        //torStationElevenComplete = false;
     }
 
     private BroadcastReceiver broadcastHandler = new BroadcastReceiver() {
@@ -349,9 +371,9 @@ public class TorFunStop extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        if(mInterstitialAd.isLoaded()){
+      /*  if(mInterstitialAd.isLoaded()){
             mInterstitialAd.show();
-        }
+        }*/
         Intent intent = new Intent(this, torontoNavMenue.class);
         intent.putExtra("isNewUser",false);
         startActivity(intent);

@@ -73,7 +73,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton139"
@@ -165,7 +165,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton140"
@@ -254,7 +254,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton141"
@@ -346,7 +346,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton142"
@@ -375,7 +375,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="InTriguing Bookstore"
+                                        android:text="Intriguing Connections"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -438,7 +438,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton173"
@@ -480,7 +480,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Mina"
+                                        android:text="Chinatown House"
                                         android:textColor="@color/browser_actions_text_color"
                                         android:textSize="18sp"
                                         android:textStyle="italic" />
@@ -530,7 +530,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton144"
@@ -622,7 +622,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton145"
@@ -714,7 +714,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton146"
@@ -771,6 +771,188 @@
 
             </TableLayout>
 
+            <ImageView
+                android:id="@+id/dividerThree8"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:id="@+id/dayTwoProgramOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/robsonplazaicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton146"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="-5dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Home Winds"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Bao Khanh"
+                                        android:textColor="@color/browser_actions_text_color"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/dividerThree9"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:id="@+id/dayTwoProgramOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/vagplazaicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton146"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/workshopicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="-5dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="TAIWANfest Food Vendors"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="TAIWANfest"
+                                        android:textColor="@color/browser_actions_text_color"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
             <TextView
                 android:id="@+id/textView28"
                 android:layout_width="match_parent"
@@ -797,83 +979,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton147"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:id="@+id/textView381"
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical"/>
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerFive"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramThree"
@@ -996,7 +1106,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton149"
@@ -1085,7 +1195,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton150"
@@ -1154,95 +1264,6 @@
                 android:textStyle="bold" />
 
             <TableLayout
-                android:id="@+id/dayOneProgramFive"
-                android:layout_width="match_parent"
-                android:layout_height="60dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton29"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton151"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerEleven"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
                 android:id="@+id/dayOneProgramSix"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -1268,7 +1289,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton152"
@@ -1357,7 +1378,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton153"
@@ -1451,7 +1472,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton154"
@@ -1514,7 +1535,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="1:15PM"
+                android:text="1:30PM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -1545,7 +1566,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton155"
@@ -1625,82 +1646,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton156"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical"/>
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve13"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -1728,7 +1678,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton157"
@@ -1822,7 +1772,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton158"
@@ -1902,81 +1852,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton159"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical"/>
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve2"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -2004,7 +1884,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton160"
@@ -2097,7 +1977,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton161"
@@ -2191,7 +2071,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton162"
@@ -2285,7 +2165,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton163"
@@ -2365,82 +2245,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton164"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical"/>
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve3"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -2468,7 +2277,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton165"
@@ -2531,7 +2340,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="5:15 PM"
+                android:text="5:30 PM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -2562,7 +2371,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton166"
@@ -2656,7 +2465,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton167"
@@ -2736,82 +2545,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton168"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="TAIWANfest"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical"/>
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve4"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -2839,7 +2577,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton169"
@@ -2933,7 +2671,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton170"
@@ -3027,7 +2765,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/qeticon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton171"
@@ -3121,7 +2859,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/qeticon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton172"
@@ -3181,7 +2919,7 @@
 
     <ScrollView
         android:id="@+id/vanDay2"
-        android:layout_width="328dp"
+        android:layout_width="360dp"
         android:layout_height="490dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -3220,142 +2958,6 @@
                 android:textStyle="bold" />
 
             <TableLayout
-                android:id="@+id/dayOneProgramOne"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageButton
-                                    android:id="@+id/imageButton0012"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:background="@android:color/transparent"
-                                    android:onClick="startVanVenueMap"
-                                    android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/annex" />
-
-                                <ImageButton
-                                    android:id="@+id/imageButton5"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:background="@android:color/transparent"
-                                    android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/exhibitionicon" />
-
-                                <TableLayout
-                                    android:layout_width="293dp"
-                                    android:layout_height="55dp">
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:layout_width="279dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="10dp"
-                                            android:gravity="center_vertical"
-                                            android:text="Let's Savour Taiwan"
-                                            android:textColor="@color/browser_actions_text_color"
-                                            android:textSize="18sp" />
-
-                                    </TableRow>
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:id="@+id/textView50"
-                                            android:layout_width="279dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="10dp"
-                                            android:gravity="center_vertical"
-                                            android:text="TAIWANfest"
-                                            android:textColor="@color/colorAccent"
-                                            android:textSize="18sp"
-                                            android:textStyle="italic" />
-                                    </TableRow>
-
-                                </TableLayout>
-
-                            </TableRow>
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginLeft="10dp"
-                                        android:gravity="center_vertical"
-                                        android:text="Home Winds"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:id="@+id/textView50"
-                                        android:layout_width="279dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginLeft="10dp"
-                                        android:gravity="center_vertical"
-                                        android:text="Bao Khanh"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerOne"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
                 android:id="@+id/dayOneProgramTwo"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
@@ -3381,7 +2983,7 @@
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton99"
@@ -3473,7 +3075,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton101"
@@ -3561,7 +3163,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton103"
@@ -3652,7 +3254,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton102"
@@ -3680,7 +3282,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="InTriguing Bookstore"
+                                        android:text="Intriguing Connections"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -3743,7 +3345,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton104"
@@ -3784,7 +3386,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Mina"
+                                        android:text="Chinatown House"
                                         android:textColor="@color/browser_actions_text_color"
                                         android:textSize="18sp"
                                         android:textStyle="italic" />
@@ -3834,7 +3436,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton105"
@@ -3925,7 +3527,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton107"
@@ -4016,7 +3618,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton106"
@@ -4087,96 +3689,6 @@
                 android:textStyle="bold" />
 
             <TableLayout
-                android:id="@+id/dayTwoProgramTwo"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="5dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton109"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:id="@+id/textView381"
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerFive"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
                 android:id="@+id/dayOneProgramThree"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
@@ -4202,7 +3714,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700_2" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton108"
@@ -4296,7 +3808,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton113"
@@ -4384,7 +3896,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton114"
@@ -4477,7 +3989,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton115"
@@ -4545,94 +4057,6 @@
                 android:textStyle="bold" />
 
             <TableLayout
-                android:id="@+id/dayOneProgramFive"
-                android:layout_width="match_parent"
-                android:layout_height="60dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton29"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton116"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerEleven"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
                 android:id="@+id/dayOneProgramSix"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
@@ -4658,7 +4082,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton117"
@@ -4746,7 +4170,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton112"
@@ -4839,7 +4263,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/annexicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton111"
@@ -4932,7 +4356,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton110"
@@ -4957,7 +4381,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Food - Hanoi Celebrity Chef"
+                                        android:text="Vietnamese Bamboo Music"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -4970,7 +4394,87 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Manh Hung Nguyen"
+                                        android:text="Kach Chi"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/granville700icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton110"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Food - Coast to Coast Cuisine"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Chef Hung"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp"
                                         android:textStyle="italic" />
@@ -5011,81 +4515,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton118"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical" />
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve11"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -5113,7 +4547,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton119"
@@ -5206,7 +4640,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton120"
@@ -5279,141 +4713,6 @@
                 android:layout_height="match_parent">
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageButton
-                                    android:id="@+id/imageButton24"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:background="@android:color/transparent"
-                                    android:onClick="startVanVenueMap"
-                                    android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/block800_3" />
-
-                                <ImageButton
-                                    android:id="@+id/imageButton121"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:background="@android:color/transparent"
-                                    android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/filmicon" />
-
-                                <TableLayout
-                                    android:layout_width="293dp"
-                                    android:layout_height="55dp">
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:layout_width="279dp"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="10dp"
-                                            android:text="Go Go Sisters"
-                                            android:textColor="@color/colorAccent"
-                                            android:textSize="18sp" />
-                                    </TableRow>
-
-                                    <TableRow
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="10dp"
-                                            android:text="Nguyen Quang-dung"
-                                            android:textColor="@color/colorAccent"
-                                            android:textSize="18sp"
-                                            android:textStyle="italic" />
-                                    </TableRow>
-
-                                </TableLayout>
-
-                            </TableRow>
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Go Go Sisters"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="TAIWANfest"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve12"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
-                android:id="@+id/dayOneProgramSeven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
                     android:layout_width="352dp"
                     android:layout_height="match_parent">
 
@@ -5438,7 +4737,7 @@
                                     android:background="@android:color/transparent"
                                     android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/block800_3" />
+                                    app:srcCompat="@drawable/granville800icon" />
 
                                 <ImageButton
                                     android:id="@+id/imageButton122"
@@ -5560,81 +4859,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton123"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical" />
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve2"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -5662,7 +4891,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton124"
@@ -5716,99 +4945,6 @@
 
             </TableLayout>
 
-            <TextView
-                android:id="@+id/textView62"
-                android:layout_width="match_parent"
-                android:layout_height="31dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/schedule_time_bg"
-                android:gravity="center"
-                android:text="3:30 PM"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TableLayout
-                android:id="@+id/dayOneProgramSeven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton125"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/culinaryicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Food - The Allie No. 11"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Allie Huang"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
             <ImageView
                 android:id="@+id/dividerTwelve8"
                 android:layout_width="match_parent"
@@ -5843,95 +4979,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton126"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/talkicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Street Arts"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Milkfish Man"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve10"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
-                android:id="@+id/dayOneProgramSeven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton127"
@@ -5986,6 +5034,99 @@
             </TableLayout>
 
             <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="3:30 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/granville700icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton125"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Food - The Allie No. 11"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Allie Huang"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
                 android:id="@+id/textView63"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
@@ -6024,7 +5165,87 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton128"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="My Journey of Identities"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Suana Emuy Cilangasay"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton128"
@@ -6115,14 +5336,14 @@
             </TableLayout>
 
             <TextView
-                android:id="@+id/textView65"
+                android:id="@+id/textView90"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="4:45 PM"
+                android:text="4:15 PM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -6153,10 +5374,10 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
-                                android:id="@+id/imageButton129"
+                                android:id="@+id/imageButton126"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -6164,7 +5385,7 @@
                                 android:layout_marginRight="5dp"
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
+                                app:srcCompat="@drawable/talkicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -6178,7 +5399,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
+                                        android:text="Taiwan Street Arts"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -6191,7 +5412,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
+                                        android:text="Milkfish Man"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp"
                                         android:textStyle="italic" />
@@ -6207,13 +5428,36 @@
 
             </TableLayout>
 
-            <ImageView
-                android:id="@+id/dividerTwelve3"
+            <TextView
+                android:id="@+id/textView65"
                 android:layout_width="match_parent"
-                android:layout_height="11dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="4:45 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                </TableRow>
+
+            </TableLayout>
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -6241,7 +5485,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton130"
@@ -6334,7 +5578,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton132"
@@ -6427,7 +5671,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton137"
@@ -6506,81 +5750,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton136"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="TAIWANfest"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical" />
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve4"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -6608,7 +5782,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton135"
@@ -6696,7 +5870,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton134"
@@ -6790,7 +5964,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton133"
@@ -6919,7 +6093,7 @@
                                     android:background="@android:color/transparent"
                                     android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/annex" />
+                                    app:srcCompat="@drawable/granville800icon" />
 
                                 <ImageButton
                                     android:id="@+id/imageButton174"
@@ -6945,7 +6119,7 @@
                                             android:layout_height="match_parent"
                                             android:layout_marginLeft="10dp"
                                             android:gravity="center_vertical"
-                                            android:text="Let's Savour Taiwan"
+                                            android:text="Taiwan Bookstore"
                                             android:textColor="@color/browser_actions_text_color"
                                             android:textSize="18sp" />
 
@@ -7050,7 +6224,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton175"
@@ -7142,7 +6316,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton176"
@@ -7230,7 +6404,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton180"
@@ -7321,7 +6495,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton178"
@@ -7349,7 +6523,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="InTriguing Bookstore"
+                                        android:text="Intriguing Connections"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -7412,7 +6586,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton179"
@@ -7453,7 +6627,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Mina"
+                                        android:text="Chinatown house"
                                         android:textColor="@color/browser_actions_text_color"
                                         android:textSize="18sp"
                                         android:textStyle="italic" />
@@ -7503,7 +6677,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton181"
@@ -7594,7 +6768,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton182"
@@ -7685,7 +6859,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton183"
@@ -7756,96 +6930,6 @@
                 android:textStyle="bold" />
 
             <TableLayout
-                android:id="@+id/dayTwoProgramTwo"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="5dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton184"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:id="@+id/textView381"
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerFive"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
                 android:id="@+id/dayOneProgramThree"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
@@ -7871,7 +6955,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700_2" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton185"
@@ -7965,7 +7049,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton186"
@@ -8053,7 +7137,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton187"
@@ -8146,7 +7230,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/vag" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton188"
@@ -8214,94 +7298,6 @@
                 android:textStyle="bold" />
 
             <TableLayout
-                android:id="@+id/dayOneProgramFive"
-                android:layout_width="match_parent"
-                android:layout_height="60dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton29"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton189"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerEleven"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
                 android:id="@+id/dayOneProgramSix"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
@@ -8327,7 +7323,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block600_1" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton190"
@@ -8382,99 +7378,6 @@
             </TableLayout>
 
             <TextView
-                android:id="@+id/textView57"
-                android:layout_width="match_parent"
-                android:layout_height="31dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/schedule_time_bg"
-                android:gravity="center"
-                android:text="1:00 PM"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TableLayout
-                android:id="@+id/dayOneProgramSeven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton191"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Newspaper"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="LH Performance Productions"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TextView
                 android:id="@+id/textView58"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
@@ -8513,7 +7416,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton192"
@@ -8606,7 +7509,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/vagplazaicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton193"
@@ -8660,19 +7563,6 @@
 
             </TableLayout>
 
-            <TextView
-                android:id="@+id/textView59"
-                android:layout_width="match_parent"
-                android:layout_height="31dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/schedule_time_bg"
-                android:gravity="center"
-                android:text="2:00 PM"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
                 android:layout_width="match_parent"
@@ -8703,7 +7593,7 @@
                                     android:background="@android:color/transparent"
                                     android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/block800_3" />
+                                    app:srcCompat="@drawable/cbcicon" />
 
                                 <ImageButton
                                     android:id="@+id/imageButton194"
@@ -8800,13 +7690,18 @@
 
             </TableLayout>
 
-            <ImageView
-                android:id="@+id/dividerTwelve14"
+            <TextView
+                android:id="@+id/textView59"
                 android:layout_width="match_parent"
-                android:layout_height="11dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="2:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -8820,81 +7715,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton195"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical" />
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve15"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -8926,7 +7751,7 @@
                                     android:background="@android:color/transparent"
                                     android:onClick="startVanVenueMap"
                                     android:scaleType="fitCenter"
-                                    app:srcCompat="@drawable/block800_3" />
+                                    app:srcCompat="@drawable/granville800icon" />
 
                                 <ImageButton
                                     android:id="@+id/imageButton196"
@@ -9062,7 +7887,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton197"
@@ -9124,6 +7949,99 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
+                android:text="3:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/granville600icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton197"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/kidszoneicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Kids Zone"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="TAIWANfest"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="3:15 PM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
@@ -9155,7 +8073,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/cbcicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton198"
@@ -9229,81 +8147,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton199"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
+                        android:orientation="vertical" />
 
                 </TableRow>
 
             </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve17"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
@@ -9331,7 +8179,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton200"
@@ -9385,99 +8233,6 @@
 
             </TableLayout>
 
-            <TextView
-                android:id="@+id/textView62"
-                android:layout_width="match_parent"
-                android:layout_height="31dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/schedule_time_bg"
-                android:gravity="center"
-                android:text="3:45 PM"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TableLayout
-                android:id="@+id/dayOneProgramSeven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton201"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Gathering and Singing"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Gathering and Singing"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
             <TableLayout
                 android:id="@+id/dayOneProgramSeven"
                 android:layout_width="match_parent"
@@ -9498,6 +8253,146 @@
 
             <TextView
                 android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="3:30 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="startVanVenueMap"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/vagplazaicon" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton121"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/filmicon" />
+
+                                <TableLayout
+                                    android:layout_width="293dp"
+                                    android:layout_height="55dp">
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="279dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="Go Go Sisters"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="18sp" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="Nguyen Quang-dung"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="18sp"
+                                            android:textStyle="italic" />
+                                    </TableRow>
+
+                                </TableLayout>
+
+                            </TableRow>
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/block800_3" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Go Go Sisters"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="TAIWANfest"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView96"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
                 android:layout_marginTop="5dp"
@@ -9535,7 +8430,87 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/annexicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton191"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Newspaper"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="LH Performance Productions"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/granville700icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton202"
@@ -9646,95 +8621,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton203"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Taiwan Stage"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="The Story House (Taiwan)"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/dividerTwelve20"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:layout_marginBottom="5dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
-                android:id="@+id/dayOneProgramSeven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startVanVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville800icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton204"
@@ -9822,7 +8709,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startVanVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/granville600icon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton205"
@@ -9970,6 +8857,118 @@
                 android:id="@+id/dayOneProgramSeven"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="5:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startVanVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/granville800icon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton205"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/talkicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Meet and Greet"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Alison Zhao"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/dayOneProgramSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
 
                 <TableRow
                     android:layout_width="352dp"

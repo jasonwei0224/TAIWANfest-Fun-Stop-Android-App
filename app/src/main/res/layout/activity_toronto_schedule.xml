@@ -24,7 +24,8 @@
         android:scrollbarStyle="outsideOverlay"
         android:scrollbarThumbVertical="@color/colorAccent"
         android:scrollbars="vertical"
-        android:visibility="visible"
+        android:verticalScrollbarPosition="right"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/foodvendoricon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton97"
@@ -168,7 +169,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/concertstageicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton98"
@@ -264,7 +265,7 @@
                                 android:foregroundGravity="center"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/concertstageicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton100"
@@ -290,7 +291,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Celebrate Women Concert"
+                                        android:text="Celebrate Women Symphony"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -324,7 +325,7 @@
 
     <ScrollView
         android:id="@+id/torDay2"
-        android:layout_width="328dp"
+        android:layout_width="350dp"
         android:layout_height="490dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -389,7 +390,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/brigantineroomicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton66"
@@ -474,8 +475,8 @@
                                 android:layout_gravity="center"
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/mbcsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton67"
@@ -513,7 +514,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Bao Khanh Vu"
+                                        android:text="Bao Khanh"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="14sp"
                                         android:textStyle="italic" />
@@ -561,7 +562,179 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/westbaysicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton67"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Taiwan Bookstore"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="TAIWANfest"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton0012"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/westbaysicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton67"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/exhibitionicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="The Courage"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Tong Zhou"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton0012"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/southlawnicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton68"
@@ -647,7 +820,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/southlawnicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton69"
@@ -733,7 +906,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton70"
@@ -819,7 +992,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/northorchardicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton71"
@@ -905,7 +1078,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/northorchardicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton72"
@@ -991,7 +1164,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/brigantinepatioicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton73"
@@ -1077,7 +1250,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/foodvendoricon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton74"
@@ -1170,7 +1343,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton75"
@@ -1257,7 +1430,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton76"
@@ -1351,7 +1524,93 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/stageintheroundicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton83"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Houng Viet"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Houng Viet"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/studiotheatre" />
 
                             <ImageButton
                                 android:id="@+id/imageButton77"
@@ -1437,7 +1696,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/harbourkidsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton78"
@@ -1530,7 +1789,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/lakesideterraceicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton79"
@@ -1623,7 +1882,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton80"
@@ -1710,7 +1969,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton81"
@@ -1766,6 +2025,100 @@
             </TableLayout>
 
             <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="2:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/westbaysicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton81"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/talkicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView381"
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Meet and Greet"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Alison Zhao"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
                 android:id="@+id/textView78"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
@@ -1804,7 +2157,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/stageintheroundicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton82"
@@ -1816,92 +2169,6 @@
                                 android:background="@android:color/transparent"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/talkicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Talk - Taiwan Refocus"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Wen Cheng Lee"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <ImageView
-                android:id="@+id/seperatator27"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/program_seperate_line" />
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="5dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton26"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startTorVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton83"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/performanceicon" />
 
                             <TableLayout
                                 android:layout_width="293dp"
@@ -1928,7 +2195,94 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Tre Viet Performing Arts Group"
+                                        android:text="Tre Viet"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/brigantineroomicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton85"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView381"
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Taiwan Refocus"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Wen Cheng Lee"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp"
                                         android:textStyle="italic" />
@@ -1983,7 +2337,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/harbourkidsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton84"
@@ -2076,7 +2430,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton85"
@@ -2163,7 +2517,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton86"
@@ -2257,7 +2611,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/lakesideterraceicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton87"
@@ -2318,6 +2672,103 @@
                 android:layout_height="31dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
+                android:text="4:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/studiotheatre" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton86"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView381"
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="My Journey In Taiwan"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Caroline Ngyuen"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/one2"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
                 android:text="4:30 PM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
@@ -2349,7 +2800,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton88"
@@ -2436,7 +2887,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton89"
@@ -2523,7 +2974,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/harbourkidsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton90"
@@ -2610,7 +3061,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/stageintheroundicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton91"
@@ -2794,7 +3245,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/studiotheatre" />
 
                             <ImageButton
                                 android:id="@+id/imageButton93"
@@ -2850,6 +3301,191 @@
             </TableLayout>
 
             <TextView
+                android:id="@+id/one3"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:text="6:00 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/boulevardpavilion" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton88"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView381"
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Taiwan Stage"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="The Story House (Taiwan)"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/boulevardpavilion" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton89"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/performanceicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView381"
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Robot Prince"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="The Story House (Taiwan)"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TextView
                 android:id="@+id/textView85"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
@@ -2886,7 +3522,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/lakesideterraceicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton94"
@@ -2978,7 +3614,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/stageintheroundicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton96"
@@ -3070,7 +3706,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/concertstageicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton95"
@@ -3130,7 +3766,7 @@
 
     <ScrollView
         android:id="@+id/torDay3"
-        android:layout_width="328dp"
+        android:layout_width="350dp"
         android:layout_height="490dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -3144,7 +3780,7 @@
         android:scrollbarStyle="outsideOverlay"
         android:scrollbarThumbVertical="@color/colorAccent"
         android:scrollbars="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -3196,7 +3832,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/brigantineroomicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton12"
@@ -3221,7 +3857,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Sorry Youth Exhibition"
+                                        android:text="Island Scream Exhibition"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -3282,7 +3918,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/mbcsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton15"
@@ -3455,7 +4091,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/southlawnicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton22"
@@ -3542,7 +4178,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton25"
@@ -3629,7 +4265,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/northorchardicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton0012"
@@ -3716,7 +4352,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/northorchardicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton30"
@@ -3803,7 +4439,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/brigantinepatio" />
 
                             <ImageButton
                                 android:id="@+id/imageButton39"
@@ -3890,7 +4526,94 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/annex" />
+                                app:srcCompat="@drawable/lakesideterraceicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton48"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:foregroundGravity="center"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Food - Hanoi Celebrity Chef"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Nguyen Manh Hung"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton0012"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/foodvendoricon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton48"
@@ -3986,7 +4709,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton49"
@@ -4074,7 +4797,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton50"
@@ -4171,7 +4894,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/studiotheatre" />
 
                             <ImageButton
                                 android:id="@+id/imageButton52"
@@ -4258,7 +4981,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/harbourkidsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton51"
@@ -4317,12 +5040,14 @@
                 android:id="@+id/seperatator42"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 app:srcCompat="@drawable/program_seperate_line" />
 
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="5dp">
+                android:paddingTop="5dp"
+                android:visibility="gone">
 
                 <TableRow
                     android:layout_width="352dp"
@@ -4378,7 +5103,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton54"
@@ -4466,7 +5191,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton53"
@@ -4563,7 +5288,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block800_3" />
+                                app:srcCompat="@drawable/lakesideterraceicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton57"
@@ -4628,7 +5353,7 @@
                 android:gravity="center"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="2:45 PM"
+                android:text="2:30 PM"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -4660,6 +5385,102 @@
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
                                 app:srcCompat="@drawable/block800_3" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:foregroundGravity="center"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/talkicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Talk - Alison Zhao"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Alison Zhao"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/schedule_time_bg"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="2:45 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/harbourkidsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton56"
@@ -4755,7 +5576,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/studiotheatre" />
 
                             <ImageButton
                                 android:id="@+id/imageButton55"
@@ -4782,7 +5603,7 @@
                                         android:layout_width="279dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Music and My Journey Of Identites"
+                                        android:text="Music and Journey Of Identites"
                                         android:textColor="@color/colorAccent"
                                         android:textSize="18sp" />
                                 </TableRow>
@@ -4852,7 +5673,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton60"
@@ -4908,6 +5729,12 @@
 
             </TableLayout>
 
+            <ImageView
+                android:id="@+id/seperatator54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -4934,7 +5761,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton59"
@@ -5031,7 +5858,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/stageintheroundicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton58"
@@ -5088,103 +5915,6 @@
             </TableLayout>
 
             <TextView
-                android:id="@+id/textView90"
-                android:layout_width="match_parent"
-                android:layout_height="31dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/schedule_time_bg"
-                android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:text="3:45 PM"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp">
-
-                <TableRow
-                    android:layout_width="352dp"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:id="@+id/imageButton21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@android:color/transparent"
-                                android:onClick="startTorVenueMap"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
-
-                            <ImageButton
-                                android:id="@+id/imageButton61"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:background="@android:color/transparent"
-                                android:foregroundGravity="center"
-                                android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/culinaryicon" />
-
-                            <TableLayout
-                                android:layout_width="293dp"
-                                android:layout_height="55dp">
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:id="@+id/textView381"
-                                        android:layout_width="279dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Food -  The Alley No. 11"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp" />
-                                </TableRow>
-
-                                <TableRow
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:text="Allie Huang"
-                                        android:textColor="@color/colorAccent"
-                                        android:textSize="18sp"
-                                        android:textStyle="italic" />
-                                </TableRow>
-
-                            </TableLayout>
-
-                        </TableRow>
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TextView
                 android:id="@+id/one"
                 android:layout_width="match_parent"
                 android:layout_height="31dp"
@@ -5223,7 +5953,95 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/lakesideterraceicon" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton61"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:foregroundGravity="center"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/culinaryicon" />
+
+                            <TableLayout
+                                android:layout_width="293dp"
+                                android:layout_height="55dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView381"
+                                        android:layout_width="279dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Food -  Petit Ete"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Allie Huang"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="italic" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/seperatator55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/program_seperate_line" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:onClick="startTorVenueMap"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton62"
@@ -5311,7 +6129,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/boulevardpavilion" />
 
                             <ImageButton
                                 android:id="@+id/imageButton63"
@@ -5399,7 +6217,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/harbourkidsicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton65"
@@ -5487,7 +6305,7 @@
                                 android:background="@android:color/transparent"
                                 android:onClick="startTorVenueMap"
                                 android:scaleType="fitCenter"
-                                app:srcCompat="@drawable/block700" />
+                                app:srcCompat="@drawable/brigantineroomicon" />
 
                             <ImageButton
                                 android:id="@+id/imageButton64"
@@ -5557,6 +6375,7 @@
         android:layout_marginRight="8dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
+        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/dayThreeBtn"
         app:layout_constraintStart_toEndOf="@+id/dayOneBtn"
         app:layout_constraintTop_toTopOf="parent"

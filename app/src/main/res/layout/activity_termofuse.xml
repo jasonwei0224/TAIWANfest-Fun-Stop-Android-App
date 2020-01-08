@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Term of Use"
+                android:text="Terms of Use"
                 android:textColor="@android:color/background_light"
                 android:textSize="24sp" />
 

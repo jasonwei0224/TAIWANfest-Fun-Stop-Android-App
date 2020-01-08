@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Organizer"
+                android:text="ORGANIZER"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -53,7 +53,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Co-Producer"
+                android:text="CO-PRODUCER"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -72,7 +72,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Co-Organizer"
+                android:text="CO-ORGANIZER"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -103,7 +103,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Government"
+                android:text="GOVERNMENT"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -183,7 +183,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Diamond"
+                android:text="DIAMOND"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -239,7 +239,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Gold"
+                android:text="GOLD"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -282,7 +282,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Silver"
+                android:text="SILVER"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -301,7 +301,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Bronze"
+                android:text="BRONZE"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -338,7 +338,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Major Partner"
+                android:text="MAJOR PARTNER"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -369,7 +369,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/schedule_time_bg"
                 android:gravity="center"
-                android:text="Partner"
+                android:text="PARTNER"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="bold" />

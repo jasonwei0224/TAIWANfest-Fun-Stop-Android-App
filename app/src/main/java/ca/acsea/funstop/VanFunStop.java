@@ -33,8 +33,8 @@ public class VanFunStop extends AppCompatActivity {
     private boolean vanStationSevenComplete;
     private boolean vanStationEightComplete;
     private boolean vanStationNineComplete;
-    private boolean vanStationTenComplete;
-    private boolean vanStationElevenComplete;
+   // private boolean vanStationTenComplete;
+   // private boolean vanStationElevenComplete;
 
     private AdView mAdView;
 
@@ -47,8 +47,8 @@ public class VanFunStop extends AppCompatActivity {
     private TableLayout vanStationSeven;
     private TableLayout vanStationEight;
     private TableLayout vanStationNine;
-    private TableLayout vanStationTen;
-    private TableLayout vanStationEleven;
+   // private TableLayout vanStationTen;
+   // private TableLayout vanStationEleven;
 
     private String vanStationOneCompleteKey = "vanStationOneComplete" ;
     private String vanStationTwoCompleteKey =  "vanStationTwoComplete";
@@ -59,8 +59,8 @@ public class VanFunStop extends AppCompatActivity {
     private String vanStationSevenCompleteKey = "vanStationSevenComplete";
     private String vanStationEightCompleteKey = "vanStationEightComplete";
     private String vanStationNineCompleteKey = "vanStationNineComplete";
-    private String vanStationTenCompleteKey = "vanStationTenComplete";
-    private String vanStationElevenCompleteKey = "van stationElevenComplete";
+    // private String vanStationTenCompleteKey = "vanStationTenComplete";
+   // private String vanStationElevenCompleteKey = "van stationElevenComplete";
 
     private DatabaseReference mDatabase;
 
@@ -93,8 +93,8 @@ public class VanFunStop extends AppCompatActivity {
         vanStationSeven = findViewById(R.id.vanProgramSeven);
         vanStationEight = findViewById(R.id.vanProgramEight);
         vanStationNine = findViewById(R.id.vanProgramNine);
-        vanStationTen = findViewById(R.id.vanProgramTen);
-        vanStationEleven = findViewById(R.id.vanProgramEleven);
+        //vanStationTen = findViewById(R.id.vanProgramTen);
+        //vanStationEleven = findViewById(R.id.vanProgramNine);
         SharedPreferences prefs = getSharedPreferences("toronto", Context.MODE_PRIVATE);
         setUp(prefs);
         gameComplete();
@@ -111,8 +111,7 @@ public class VanFunStop extends AppCompatActivity {
     private void gameComplete(){
         if(vanStationOneComplete && vanStationTwoComplete && vanStationThreeComplete
                 && vanStationFourComplete && vanStationFiveComplete && vanStationSixComplete &&
-                vanStationSevenComplete && vanStationEightComplete && vanStationNineComplete
-                && vanStationTenComplete && vanStationElevenComplete){
+                vanStationSevenComplete && vanStationEightComplete && vanStationNineComplete){
             ScrollView scrollView = findViewById(R.id.vanfunstop);
             scrollView.setVisibility(View.GONE);
             ImageButton camera = findViewById(R.id.camerabtn);
@@ -182,7 +181,7 @@ public class VanFunStop extends AppCompatActivity {
                 setStationComplete(vanStationNine);
             }
         }
-        if(prefs.contains(vanStationTenCompleteKey)){
+       /* if(prefs.contains(vanStationTenCompleteKey)){
             vanStationTenComplete = prefs.getBoolean(vanStationTenCompleteKey, false);
             if(vanStationTenComplete) {
                 setStationComplete(vanStationTen);
@@ -193,7 +192,7 @@ public class VanFunStop extends AppCompatActivity {
             if(vanStationElevenComplete){
                 setStationComplete(vanStationEleven);
             }
-        }
+        }*/
     }
 
     private void setStationComplete(TableLayout tableLayout){
@@ -242,19 +241,12 @@ public class VanFunStop extends AppCompatActivity {
             vanStationEightComplete = true;
             vanStationEight.setAlpha(0.3f);
         } else if (stationNumber == 9){
-            vanStationNineComplete = true;
-            vanStationNine.setAlpha(0.3f);
-        } else if (stationNumber == 10){
-            vanStationTenComplete = true;
-            vanStationTen.setAlpha(0.3f);
-        } else if (stationNumber == 11 ){
             if(vanStationOneComplete && vanStationTwoComplete && vanStationThreeComplete
                     && vanStationFourComplete && vanStationFiveComplete && vanStationSixComplete &&
-                    vanStationSevenComplete && vanStationEightComplete && vanStationNineComplete
-                    && vanStationTenComplete) {
-                vanStationElevenComplete = true;
-                vanStationEleven.setAlpha(0.3f);
-            }else{
+                    vanStationSevenComplete && vanStationEightComplete) {
+                vanStationNineComplete = true;
+                vanStationNine.setAlpha(0.3f);
+            }else {
                 Toast.makeText(VanFunStop.this, "Please come back when you've visit all other locations", Toast.LENGTH_LONG).show();
             }
         }
@@ -271,8 +263,7 @@ public class VanFunStop extends AppCompatActivity {
         prefEditor.putBoolean(vanStationSevenCompleteKey, vanStationSevenComplete);
         prefEditor.putBoolean(vanStationEightCompleteKey, vanStationEightComplete);
         prefEditor.putBoolean(vanStationNineCompleteKey, vanStationNineComplete);
-        prefEditor.putBoolean(vanStationTenCompleteKey, vanStationTenComplete);
-        prefEditor.putBoolean(vanStationElevenCompleteKey, vanStationElevenComplete);
+
         prefEditor.apply();
     }
 
@@ -286,8 +277,7 @@ public class VanFunStop extends AppCompatActivity {
         vanStationSevenComplete = false;
         vanStationEightComplete = false;
         vanStationNineComplete = false;
-        vanStationTenComplete = false;
-        vanStationElevenComplete = false;
+
     }
 
     public void showRule(View view){

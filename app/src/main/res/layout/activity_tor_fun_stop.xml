@@ -207,7 +207,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="-15dp"
                         android:layout_marginRight="10dp"
-                        app:srcCompat="@drawable/twstage" />
+                        app:srcCompat="@drawable/twbookstore" />
 
                     <TableLayout
                         android:layout_width="match_parent"
@@ -221,7 +221,7 @@
                                 android:id="@+id/TorProgramThreeTxt"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Taiwan Stage"
+                                android:text="Taiwan Bookstore"
                                 android:textColor="@color/browser_actions_text_color" />
                         </TableRow>
 
@@ -233,7 +233,7 @@
                                 android:id="@+id/textView54"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Boulevard Pavillion"
+                                android:text="West Corridor Bays"
                                 android:textColor="@color/browser_actions_text_color"
                                 android:textStyle="bold" />
                         </TableRow>
@@ -272,7 +272,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="-15dp"
                         android:layout_marginRight="10dp"
-                        app:srcCompat="@drawable/craft" />
+                        app:srcCompat="@drawable/torontohopetalk" />
 
                     <TableLayout
                         android:layout_width="match_parent"
@@ -286,7 +286,7 @@
                                 android:id="@+id/TorProgramFourTxt"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Kids Zone"
+                                android:text="Hope Talk"
                                 android:textColor="@color/browser_actions_text_color" />
 
                         </TableRow>
@@ -299,7 +299,7 @@
                                 android:id="@+id/textView54"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Harbour Kids "
+                                android:text="Studio Theatre"
                                 android:textColor="@color/browser_actions_text_color"
                                 android:textStyle="bold" />
                         </TableRow>
@@ -338,7 +338,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="-15dp"
                         android:layout_marginRight="10dp"
-                        app:srcCompat="@drawable/twbookstore" />
+                        app:srcCompat="@drawable/sorryyouthexhibition" />
 
                     <TableLayout
                         android:layout_width="match_parent"
@@ -352,7 +352,7 @@
                                 android:id="@+id/TorProgramFiveTxt"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Taiwan Bookstore"
+                                android:text="Island Scream"
                                 android:textColor="@color/browser_actions_text_color" />
                         </TableRow>
 
@@ -364,7 +364,7 @@
                                 android:id="@+id/textView54"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Garage Bays"
+                                android:text="Brigantine Room"
                                 android:textColor="@color/browser_actions_text_color"
                                 android:textStyle="bold" />
                         </TableRow>
@@ -403,7 +403,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="-15dp"
                         android:layout_marginRight="10dp"
-                        app:srcCompat="@drawable/friendshipkitchen" />
+                        app:srcCompat="@drawable/funstopstationicon" />
 
                     <TableLayout
                         android:layout_width="match_parent"
@@ -417,7 +417,7 @@
                                 android:id="@+id/TorPorgramSixTxt"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Friendship Kitchen"
+                                android:text="Fun Stop"
                                 android:textColor="@color/browser_actions_text_color" />
                         </TableRow>
 
@@ -429,7 +429,7 @@
                                 android:id="@+id/textView54"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Lakeside Terrace"
+                                android:text="Boulevard Pavilion"
                                 android:textColor="@color/browser_actions_text_color"
                                 android:textStyle="bold" />
                         </TableRow>
@@ -443,7 +443,8 @@
             <TableLayout
                 android:id="@+id/TorProgramSeven"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TableRow
                     android:id="@+id/sevenRow"
@@ -508,7 +509,8 @@
             <TableLayout
                 android:id="@+id/TorProgramEight"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TableRow
                     android:id="@+id/eightRow"
@@ -573,7 +575,8 @@
             <TableLayout
                 android:id="@+id/TorProgramNine"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TableRow
                     android:id="@+id/nineRow"
@@ -612,7 +615,7 @@
                                 android:id="@+id/TorProgramNineTxt"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Sorry Youth Exhibition"
+                                android:text="Island Scream"
                                 android:textColor="@color/browser_actions_text_color" />
                         </TableRow>
 
@@ -638,7 +641,8 @@
             <TableLayout
                 android:id="@+id/TorProgramTen"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TableRow
                     android:id="@+id/tenRow"
@@ -703,7 +707,8 @@
             <TableLayout
                 android:id="@+id/TorProgramEleven"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TableRow
                     android:id="@+id/elevenRow"
@@ -754,8 +759,9 @@
                                 android:id="@+id/textView54"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Garage Bays"
-                                android:textColor="@color/browser_actions_text_color" />
+                                android:text="West Corridor Bays"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:textStyle="bold" />
                         </TableRow>
 
                     </TableLayout>

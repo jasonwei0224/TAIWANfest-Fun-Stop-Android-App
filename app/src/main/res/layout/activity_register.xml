@@ -74,7 +74,7 @@
         android:layout_width="181dp"
         android:layout_height="31dp"
         android:layout_marginBottom="75dp"
-        android:text="By signing up you accept and agree to ACSEA's Privacy Policy and Term of Use"
+        android:text="By signing up you accept and agree to ACSEA's Privacy Policy and Terms of Use"
         android:textColor="@color/darkBlue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
