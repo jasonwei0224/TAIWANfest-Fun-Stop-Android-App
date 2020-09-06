@@ -31,7 +31,7 @@ Notifcation:
 ![Colored Wireframe](./Appcoloredwireframe.png)
 
 ## Technologies
-* Swift
+* Java
 * Firebase Realtime Databese
 
 ## Features
